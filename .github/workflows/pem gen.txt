@@ -1,0 +1,80 @@
+14
+
+
+4
+Context
+From the NodeJS documentation on TLS/SSL for Node v10.9.0 (2018-AUG)
+
+https://nodejs.org/api/tls.html#tls_tls_ssl_concepts
+
+openssl genrsa -out ryans-key.pem 2048
+Will produce:
+
+-----BEGIN RSA PRIVATE KEY-----
+base64 encoded magic here...
+-----END RSA PRIVATE KEY-----
+Which I can then successfully use the Sign class to cryptographically sign a message:
+
+https://nodejs.org/api/crypto.html#crypto_class_sign
+
+const crypto = require('crypto');
+const sign = crypto.createSign('RSA-SHA256');
+
+sign.update('some data to sign');
+
+const privateKey = `Insert magic value from above`;
+console.log(sign.sign(privateKey, 'base64'));
+I have tried the following with no success:
+
+const crypto = require('crypto');
+const dhke = crypto.createDiffieHellman(2048);
+dhke.generateKeys();
+const private_pem = `-----BEGIN RSA PRIVATE KEY-----
+${dhke.getPrivateKey('base64')}
+-----END RSA PRIVATE KEY-----`;
+console.log(private_pem);
+
+const sign = crypto.createSign('RSA-SHA256');
+sign.update('some data to sign');
+
+const signature = sign.sign(private_pem, 'base64');
+console.log(signature);
+Getting the following error:
+
+Error: error:0D07207B:asn1 encoding routines:ASN1_get_object:header too long
+    at Sign.sign (internal/crypto/sig.js:84:26)
+...
+The Question
+How do I use the crypto library in NodeJS to achieve what openssl command line tool is performing (or another NPM module) to create a valid PEM formatted public/private key-pair which is required by the Sign class?
+
+Similar unresolved questions
+Generate Key for signing within nodejs
+Solution
+Here is the start to finish working solution thanks to the accepted answer from JacobTDC where NodeJS v10.12.0 added this feature.
+
+const crypto = require('crypto'); const sign = crypto.createSign('RSA-SHA256');
+
+sign.update('some data to sign');
+
+// $ openssl genrsa -out ryans-key.pem 2048 
+// const privateKey = `Insert magic value from above`;
+
+const { generateKeyPairSync } = require('crypto'); 
+const { publicKey, privateKey } = generateKeyPairSync('rsa', 
+{   modulusLength: 2048,  // the length of your key in bits   
+    publicKeyEncoding: {
+      type: 'spki',       // recommended to be 'spki' by the Node.js docs
+      format: 'pem'   
+    },   
+    privateKeyEncoding: {
+      type: 'pkcs8',      // recommended to be 'pkcs8' by the Node.js docs
+      format: 'pem',
+      //cipher: 'aes-256-cbc',   // *optional*
+      //passphrase: 'top secret' // *optional*   
+  } 
+}); 
+console.log(privateKey); 
+console.log(sign.sign(privateKey, 'base64'));
+node.js
+ssl
+pem
