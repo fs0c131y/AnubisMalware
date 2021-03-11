@@ -1,0 +1,32 @@
+Provides a single method deprecate to be used to declare when something is going away.
+
+class Legacy
+  def self.klass_method
+    # ...
+  end
+
+  def instance_method
+    # ...
+  end
+
+  extend Gem::Deprecate
+  deprecate :instance_method, "X.z", 2011, 4
+
+  class << self
+    extend Gem::Deprecate
+    deprecate :klass_method, :none, 2011, 4
+  end
+end
+Public Class Methods
+deprecate(name, repl, year, month)
+Simple deprecation method that deprecates name by wrapping it up in a dummy method. It warns on each call to the dummy method telling the user of repl (unless repl is :none) and the year/month that it is planned to go away.
+
+skip_during() { || ... }
+Temporarily turn off warnings. Intended for tests only.
+
+Private Instance Methods
+deprecate(name, repl, year, month)
+Simple deprecation method that deprecates name by wrapping it up in a dummy method. It warns on each call to the dummy method telling the user of repl (unless repl is :none) and the year/month that it is planned to go away.
+
+skip_during() { || ... }
+Temporarily turn off warnings. Intended for tests only.

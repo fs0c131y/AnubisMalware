@@ -1,0 +1,448 @@
+How to fetch data in React
+Fetching server-provided data
+How React components fetch data
+Using the Fetch API
+How to fetch data with Axios
+Is Fetch better than Axios?
+How to fetch data with async/await in React
+How to fetch data from a GraphQL API in React
+How to fetch data in higher-order components
+How to fetch data in render props
+Fetching data with React Hooks
+Concurrent Mode and React Suspense
+To show how to fetch data in React, we’ll build a simple React application with components that fetch users from JSONPlaceholder. All the components render the same data and look the same. I used React Bootstrap Table for the actual rendering in all components, but the components differ greatly in how they fetch the data.
+
+Here’s what our example app looks like:
+
+React Data Fetching Example App
+The main app component is simply a functional component. It renders the various data patterns components that illustrate each method of data fetching:
+
+import React from ‘react’;
+import ‘./App.css’;
+import UserTableAutonomous from “./components/UserTableAutonomous”;
+import UserTableHOC from “./components/UserTableHOC”;
+import UserTableReactHooks from “./components/UserTableReactHooks”;
+import UserTableRenderProps from “./components/UserTableRenderProps”;
+import SimpleUserTable from “./components/SimpleUserTable”;
+function App() {
+ return (
+   <div className=’App’>
+     <h2> User Table — Autonomous</h2>
+     <UserTableAutonomous/>
+     <h2> User Table — High Order Component</h2>
+     <UserTableHOC/>
+     <h2> User Table — Render Props</h2>
+     <UserTableRenderProps children={SimpleUserTable}/>
+     <h2> User Table — React Hooks</h2>
+     <UserTableReactHooks/>
+   </div>
+ );
+}
+export default App
+You can access the full source code at GitLab.
+
+Without further ado, let’s get started.
+
+How to fetch data in React
+If you’re just starting out with React, you may have only worked on simple, beginner-level projects that don’t need to access data. As you go along your React journey and learn how to build more complex projects, your apps will almost certainly require this functionality. In fact, data fetching is a core requirement of almost every React app.
+
+There is a variety of ways to fetch data in React, including using the built-in Fetch API, Axios, async/await, and more. We’ll go over all these methods in detail. You can also fetch data in higher-order components and render props, from a GraphQL backend, and more. Keep reading to learn how.
+
+For a visual guide to help you learn the basics of data fetching in React, check out this comprehensive, straightforward video tutorial:
+
+
+
+Fetching server-provided data
+This is the old-school way of getting data for your app. The data is embedded in the HTML sent from the server. If you want fresh data, you need to refresh the page manually or have the page refresh periodically. Remember this?
+
+<meta http-equiv="refresh" content="30">
+It’s not particularly relevant for a React application, which has much more dynamic, fine-grained ways to update itself, but it is still a legitimate way to get data from the server to the browser. A lot of legacy web applications still use it, and if JavaScript is disabled or you must deal with ancient browsers, it may even be the best approach because is very simple and straightforward.
+
+How React components fetch data
+React components can just fetch their own data. The big question is when to fetch the data. There are several options:
+
+Start with no data, and fetch data based on user actions like clicking a button
+Load the data once
+Load the data periodically
+Since the component is totally autonomous, no other component can tell it that it’s time to load its data. In this case, I chose to load the data for the first time in componentDidMount() and also set a timer that will fetch the data again every five seconds.
+
+Let’s look at the UserTableAutonmous component and dissect it piece by piece. It’s a standard class-based React component. Its state includes two fields: a Boolean isFetching initialized to false since it’s not fetching yet, and an empty list of users, which are the data it wants to fetch.
+
+class UserTableAutonomous extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            isFetching: false,
+            users: []
+        };
+    }
+The render() method renders the BootstrapTable component, passing the current users from the state. If it’s in the middle of fetching, then a “Fetching users…” message is displayed, too. This is super-rudimentary progress reporting. The bootstrap table will display only the ID, name, and username fields of each user, though there are several other fields.
+
+render() {
+        return (
+            <div>
+                <BootstrapTable data={this.state.users} 
+                                trClassName={rowClassNameFormat}>
+                    <TableHeaderColumn isKey dataField='id' />
+                    <TableHeaderColumn dataField='name' />
+                    <TableHeaderColumn dataField='username' />
+                </BootstrapTable>
+                <p>{this.state.isFetching ? 'Fetching users...' : ''}</p>
+            </div>
+        )
+    }
+As I discussed before, the actual data fetching happens in componentDidMount(), which is the React lifecycle method being called when the component is mounted and ready to go. Some people may argue that it’s better to use componentWillMount(), which is called when the component is about to be mounted and starts data fetching earlier to save time. There are two important reasons against it, however.
+
+First, it’s deprecated as of React 17. Second, when you use the Fetch API or Axios in componentWillMount(), React will render without waiting for it to finish, which will cause an empty render for the first time? —? so you don’t really save any time.
+
+Note that componentDidMount() is called after the first render, so you still need to handle the first empty render. In our, demo I use the “Fetching users…” message. Another option is to do your initial data fetching in the constructor, but that will delay the first render of your component.
+
+OK, it’s settled? — ?we’ll fetch our data in componentDidMount(). The code simply calls the fetchUsers() method and starts a timer that will call fetchUsers() every five seconds.
+
+componentDidMount() {
+        this.fetchUsers();
+        this.timer = setInterval(() => this.fetchUsers(), 5000);
+    }
+The componentWillUnmount() method is called when our component goes away, and it’s a good time to stop the timer by calling clearInterval() and setting it to null.
+
+componentWillUnmount() {
+        clearInterval(this.timer);
+        this.timer = null;
+    }
+The fetchUsers() sets the isFetching state variable to true, so while fetching new data, the component renders the “Fetching users…” message. Then it gets the users by some “magic” and the sets isFetching back to false.
+
+fetchUsers() {
+     this.setState({...this.state, isFetching: true});
+        users = <REDACTED>
+     this.setState({...this.state, isFetching: false});
+        // error handling
+        <REDACTED>
+    }
+I’m not a big fan of autonomous components; they are too much of a black box. They mix two very different concerns of data fetching and data display and are more difficult to test.
+
+There are multiple ways to implement the fetchUsers() function. I’ve used three different implementations in different components. All three implementations accomplish the same task:
+
+The built-in Fetch API
+Axios
+Async/await + Axios
+I could have likewise used async/await with the React Fetch API. I arbitrarily used different implementations in different components; they are all exchangeable. The pros and cons are more ergonomic than functional.
+
+Let’s take a closer look at these alternative implementations.
+
+Using the Fetch API
+I’ve used Fetch in the UserTableHOC component. I actually called the function fetchUsersWithFetchAPI(), but assigned it to a variable called fetchUsers, so the component just calls fetchUsers().
+
+The function starts by setting the isFetching variable to true, then calls fetch. Fetch returns a promise, which resolves to a response. The response’s json() method returns a JavaScript object. It then sets the users in state and resets isFetching to false. If something goes wrong, the catch handler logs the error to the console and, with the fetch finished, resets the isFetching variable.
+
+fetchUsersWithFetchAPI = () => {
+        this.setState({...this.state, isFetching: true});
+        fetch(USER_SERVICE_URL)
+            .then(response => response.json())
+            .then(result => {
+                this.setState({users: result, isFetching: false})
+            })
+            .catch(e => {
+                console.log(e);
+                this.setState({...this.state, isFetching: false});
+            });
+    };
+fetchUsers = this.fetchUsersWithFetchAPI
+It is pretty verbose and cumbersome, but it is standard and has no external dependencies ?— ?that’s the selling point of the Fetch API. Then again, this is JavaScript; lots and lots of dependencies are the law of the land. Enter Axios.
+
+How to fetch data with Axios
+I’ve used Axios for the UserTableRenderProps component. Axios also has a promise-based API similar to Fetch, but Axios saves the JSON parsing phase and handles all errors. The Fetch API, for example, returns 404 as a normal response, so you need to check the response in your code and throw an error yourself if needed.
+
+fetchUsersWithAxios = () => {
+        this.setState({...this.state, isFetching: true});
+        axios.get(USER_SERVICE_URL)
+            .then(response => {
+                this.setState({data: response.data, isFetching: false})
+            })
+            .catch(e => {
+                console.log(e);
+                this.setState({...this.state, isFetching: false});
+            });
+    };
+fetchUsers = this.fetchUsersWithAxios
+The code is almost identical to the Fetch API version, with one less step and more robust error handling.
+
+Is Fetch better than Axios?
+You can communicate with servers through the HTTP protocol using either the Fetch API or Axios. What’s the difference?
+
+The Fetch API provides a fetch() method defined on the window object, as well as a JavaScript interface for accessing and manipulating HTTP requests and responses. fetch() has only one mandatory argument: the URL of the resource to be fetched. It returns a promise that can be used to retrieve the response of the request.
+
+Axios, on the other hand, is a JavaScript library that enables you to make HTTP requests from Node.js or XML. It supports the Promise API in JavaScript ES6. Axios enables you to intercept HTTP requests and responses, protects the client side against cross-site request forgery (XSRF), and is capable of canceling requests.
+
+So which React data fetching method is better: fetch() or Axios? It depends on the particular requirements of your project and your comfort level when it comes to using built-in APIs.
+
+Axios provides an easy-to-use API in a compact package for most of your HTTP communication needs. However, if you prefer to stick with native APIs, there’s nothing stopping you from implementing Axios features. It’s certainly possible to reproduce the key features of the Axios library using the fetch() method provided by web browsers. Ultimately, whether it’s worth loading a client HTTP API depends on whether you’re comfortable working with built-in APIs.
+
+How to fetch data with async/await in React
+I’ve used the async/await syntax in the UserTableAutonomous component. Those promise chains are a huge improvement over the old callback hell, but it can get much better. See how nice and natural the same code looks with async/await:
+
+async fetchUsersAsync() {
+        try {
+            this.setState({...this.state, isFetching: true});
+            const response = await axios.get(USER_SERVICE_URL);
+            this.setState({users: response.data, isFetching: false});
+        } catch (e) {
+            console.log(e);
+            this.setState({...this.state, isFetching: false});
+        }
+    };
+fetchUsers = this.fetchUsersAsync;
+This is my favorite variant without a doubt.
+
+How to fetch data from a GraphQL API in React
+The users API is a REST API. How about GraphQL backend? GraphQL servers typically return JSON over HTTP, too.
+
+The main difference is that there is one query endpoint to fetch data (ignoring mutations and subscriptions), and the actual data requested and returned follows the GraphQL schema. The data fetching strategies and tactics don’t distinguish between REST and GraphQL, and they’ll work equally well on both.
+
+Now, WebSockets versus gRPC is a different story ?—? we’ll leave that for another day.
+
+How to fetch data in higher-order components
+Higher-order components are composite components wherein a top-level component is responsible for fetching the data and propagating it to child components. Higher-order components can be arbitrarily nested.
+
+Several descendant components may receive different parts of the fetched data, while other components in the hierarchy may not use the data at all. Here’s a little diagram to illustrate this:
+
+React Data Fetching in Higher-Order Components
+The basic idea is to isolate the concern of fetching and distributing the data from the concern of actually doing something with the data. In scenarios where multiple components need different aspects of the data, it is also more efficient because you only fetch the data once. Let’s see how it plays out.
+
+The SimpleUserTable component knows nothing about servers, lifecycle methods, data fetching, or error handling; all it does is receive the users list in its props and render them using the BootstrapTable component. It does understand the properties of a user object and expects an id, name and username.
+
+import React from 'react'
+import {BootstrapTable, TableHeaderColumn} from 'react-bootstrap-table'
+import '../css/Table.css'
+import '../../node_modules/react-bootstrap-table/dist/react-bootstrap-table-all.min.css'
+function rowClassNameFormat(row, rowIdx) {
+    return rowIdx % 2 === 0 ? 'Gold-Row' : 'Silver-Row';
+}
+const SimpleUserTable = (props) => {
+    return (
+        <div>
+            <BootstrapTable data={props.data} 
+                            trClassName={rowClassNameFormat}>
+                <TableHeaderColumn isKey dataField='id' />               
+                <TableHeaderColumn dataField='name' />
+                <TableHeaderColumn dataField='username' />
+            </BootstrapTable>
+            <p>{props.isFetching ? 'Fetching users...' : ''}</p>
+        </div>
+    )
+};
+export default SimpleUserTable
+It’s interesting that this knowledge of the user object is just a partial view. The actual user object returned from JSONPlaceholder has much more information:
+
+{
+    "id": 1,
+    "name": "Leanne Graham",
+    "username": "Bret",
+    "email": "Sincere@april.biz",
+    "address": {
+      "street": "Kulas Light",
+      "suite": "Apt. 556",
+      "city": "Gwenborough",
+      "zipcode": "92998-3874",
+      "geo": {
+        "lat": "-37.3159",
+        "lng": "81.1496"
+      }
+    },
+    "phone": "1-770-736-8031 x56442",
+    "website": "hildegard.org",
+    "company": {
+      "name": "Romaguera-Crona",
+      "catchPhrase": "Multi-layered client-server neural-net",
+      "bs": "harness real-time e-markets"
+    }
+  }
+The SimpleUserTable cares only about the id, name, and username. If the backend server adds more info or removes/renames some unused fields, this is totally fine.
+
+So what fetches the actual data? That would be the UserTableHOC. It fetches the users in its componentDidMount by calling the fetchUsers() method that updates the users, and isFetching is the state. The render() method simply passes the state to the child SimpleUserTable.
+
+import React, {
+  Component
+} from 'react'
+import SimpleUserTable from "./SimpleUserTable";
+const USER_SERVICE_URL = 'https://jsonplaceholder.typicode.com/users';
+class UserTableHOC extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isFetching: false,
+      users: []
+    };
+  }
+  render = () => < SimpleUserTable data = {
+    this.state.users
+  }
+  isFetching = {
+    this.state.isFetching
+  }
+  />;
+  componentDidMount() {
+    this.fetchUsers();
+  }
+  fetchUsers = < REDACTED >
+}
+export default UserTableHOC
+In practice, we split the UserTableAutonomous into two nested components; the code is pretty much identical, but it’s much cleaner. What’s more, we’re all set in case we want to have multiple components that display user data in different ways.
+
+For example, if we want to enable user selection and then displaying the full info of the selected user in another component (e.g., FullUserInfo), the UserTableHOC can just pass the relevant user info to the FullUserInfo component.
+
+That sounds great, but there is a lot of work in these cases, such as informing the HOC about selections in child components and passing fetched data through props of deeply nested component hierarchies.
+
+So the HOC is not only responsible for fetching data, it is also responsible for rendering the components directly below it in the hierarchy and potentially responding to events originating from these children.
+
+Our next data pattern addresses these concerns, but it comes with its own trade-offs.
+
+How to fetch data in render props
+What if we could implement a generic data fetcher that knows nothing about what is supposed to do something with the data? It turns out to be a common practice. The trick is to use a layer of indirection.
+
+As the saying goes, “You can solve any problem in computer science with an additional layer of indirection … except for the problem of too many layers of indirection.”
+
+The React pattern is often called render props. The idea is to pass a prop to a component, which is a function and not a static value or object. The receiving object will execute this prop, which is often used in the render() method?—?hence the name render prop.
+
+What that buys you is the ability to deeply customize the way the target component works by replacing parts of its logic with your function. If you’re familiar with object-oriented design patterns, it is similar to the strategy pattern or the template method pattern.
+
+The code of UserTableRenderProps is very similar to UserTableHOC. The big difference is in the render() method, which calls its props.children() function. This increases the level of abstraction because the component doesn’t need to know anything about its children.
+
+import {
+  Component
+} from 'react'
+import axios from 'axios'
+const USER_SERVICE_URL = 'https://jsonplaceholder.typicode.com/users';
+class UserTableRenderProps extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isFetching: false,
+      data: []
+    };
+  }
+  render = () => this.props.children(this.state);
+  componentDidMount() {
+    this.fetchUsers();
+  }
+  fetchUsers = < REDACTED >
+}
+export default UserTableRenderProps
+That’s cool, but that means whatever passes the render props up top needs to know about the internal structure.
+
+When does it make sense to use render props? A good example is in a deep hierarchy where the data fetching components can share a cache. In this case, it makes sense to have multiple data fetchers that have different children, as opposed to HOCs, where the children are fixed (hard-coded in the render() method of the HOC component).
+
+Let’s take another look at the App() functional component from App.js that passes the children render prop to the UserTableRenderProps. As you can see, it needs to know about SimpleUserTable and pass it along.
+
+function App() {
+    return (
+        <div className='App'>
+            <h2> User Table - Autonomous</h2>
+            <UserTableAutonomous/>
+            <h2> User Table - High Order Component</h2>
+            <UserTableHOC/>
+            <h2> User Table - Render Props</h2>
+            <UserTableRenderProps children={SimpleUserTable}/>
+            <h2> User Table - React Hooks</h2>
+            <UserTableReactHooks/>
+        </div>
+    );
+}
+Ensure components render in production
+Debugging React applications can be difficult, especially when there is complex state. If you’re interested in monitoring and tracking Redux state for all of your users in production, try LogRocket. LogRocket Dashboard Free Trial Banner
+
+LogRocket is like a DVR for web apps, recording literally everything that happens on your site. Instead of guessing why problems happen, you can aggregate and report on what state your application was in when an issue occurred.
+
+The LogRocket Redux middleware package adds an extra layer of visibility into your user sessions. LogRocket logs all actions and state from your Redux stores.
+
+Modernize how you debug your React apps — start monitoring for free.
+
+Fetching data with React Hooks
+Data fetching in React used to require a class-based component with state and lifecycle methods. But React 16.8 brings us Hooks.
+
+Patterns such as higher-order components and render props require you to restructure your component hierarchy and/or propagate a lot of state through your hierarchy (either directly with props or with various wrappers, providers, and consumers). In addition, people struggle with classes and the way they are implemented.
+
+The idea of React Hooks is to break state management into independent functions that don’t require fitting the round peg of state into the square hole of class lifecycle methods.
+
+All of React’s features can be used in functional components and don’t require a class. In particular, we can use React Hooks for data fetching.
+
+Let’s examine the code of the UserTableReactHooks functional component.
+
+First, the useState() state Hook is called with an initial state. This is similar to the constructor. The Hook returns two values: the current state and a function to update it. Note that you can have multiple state Hooks, which could be useful if you need to update independently different parts of the state.
+
+import React, {useEffect, useState} from 'react';
+import axios from "axios";
+import SimpleUserTable from "./SimpleUserTable";
+const USER_SERVICE_URL = 'https://jsonplaceholder.typicode.com/users';
+function UserTableReactHooks() {
+    const [data, setData] = useState({users: [], isFetching: false});
+So far, so good. To perform side effects like data fetching, we will use an effect Hook. Effect Hooks accept a function and run it after each render by default.
+
+In this case, I want it to run just once, so I pass both a function and an empty array. The array argument tells the Hook to apply the effect (i.e., run the function) only if the state variables listed in the array are changed. Since I passed an empty array, there is no state variable to watch for, and the effect will run just once.
+
+useEffect(() => {
+        const fetchUsers = async () => {
+            try {
+                setData({users: data.users, isFetching: true});
+                const response = await axios.get(USER_SERVICE_URL);
+                setData({users: response.data, isFetching: false});
+            } catch (e) {
+                console.log(e);
+                setData({users: data.users, isFetching: false});
+            }
+        };
+        fetchUsers();
+    }, []);
+You can think of effects as a combination of componentDidMount() and componentDidUpdate() of class-based components.
+
+Finally, it just returns the SimpleUserTable with the local state for rendering.
+
+return <SimpleUserTable data={data.users}
+                            isFetching={data.isFetching}
+    />
+}
+export default UserTableReactHooks
+Hooks are a cool and ergonomic addition to React. I highly recommend that you get familiar with them.
+
+Concurrent Mode and React Suspense
+If you’re a React developer, by now you’ve most likely heard of Concurrent Mode. Suspense is a mechanism within Concurrent Mode that enables your components to display something as a fallback while it waits for some long-running operation to finish. Obviously, data fetching is a long-running operation, and you may want to display something like a message, progress bar, or spinner while your data is being fetched.
+
+In other words, React Suspense is a set of features that help React apps stay responsive regardless of a user’s device capabilities or network speed. It wraps your custom components and enables them to communicate to React that they’re waiting for some data to load before rendering the component.
+
+Suspense is neither a data fetching library like react-async nor a state management tool a-la Redux. It simply prevents your components from rendering to the DOM until some asynchronous operation (i.e., a network request) is completed.
+
+Take the following example:
+
+<Suspense fallback={<p>loading...</p>}>
+  <Todos />
+</Suspense>
+The Todos component is wrapped with a Suspense component that has a fallback prop. If Todos is waiting for an asynchronous operation, such as retrieving the list of to-dos from an API, React renders <p>loading…</p> to the DOM instead. The Todos component is rendered when the operation ends.
+
+You might be tempted to attempt the same with the following code:
+
+...
+if (loading) {
+  return <p>loading...</p>
+}
+
+return <Todos />
+...
+This doesn’t quite work because it assumes the async operation was triggered by a parent component and that <Todos /> is being rendered by this parent component after the operation is complete. But what if Todos triggered the operation?
+
+In this case, you would need to move the loading check from the parent component to the Todos component. Let’s say, then, that there are more components, each triggering its own async request. Each child component would have to manage its own loading state independently, which would make it difficult to orchestrate your data loading operations in a clean wat that doesn’t result in a janky UX.
+
+<Suspense fallback={<p>loading...</p>}>
+  <Todos />
+  <Tasks />
+</Suspense>
+In the above example, we added another Tasks component. Let’s assume this component also triggers its own async operation. By wrapping both components in Suspense, you’re essentially telling React not to render either component until both operations are resolved. To do the same without Suspense, you would need to move the async calls to the parent component and add an if check for the loading flag before rendering the components.
+
+Of course, you can mix and match approaches — including fetch-on-render, fetch-then-render, and render-as-you-fetch. You can learn more about these approaches by reading our comprehensive React Suspense tutorial.
+
+If you already have some components that fetch data in a certain way, and other components that use another method, they can all live happily in the same application. But if you’re starting from scratch, using React Hooks ?and Suspense?? will likely be the best path forward.
+
+It’s important to note that React Suspense is an experimental feature that is not yet available in a stable release.
+
+Conclusion
+We covered a lot of ground in this article. We explored all the common React data fetching strategies and tactics. We weighed the pros and cons of each approach and demonstrated each one in code.
+
+At this point in time, I would go for React Hooks and Axios using async/await syntax. In the near future, it would be interesting to check out Suspense for data fetching.
