@@ -1,0 +1,55 @@
+7,255 IP address blocks assigned to the Russian Federation
+
+As of June 2018, there are over 7,200 IPv4 address blocks assigned to the Russian Federation. The largest of them, with 524,288 addresses each, are: 5.136.0.0/13, 95.24.0.0/13, 176.208.0.0/13, and 178.64.0.0/13.
+
+However, some of the IP ranges you've blocked are not assigned to the Russian Federation, but attacks may come from anywhere just as easily. It's common for attackers to spoof IP addresses or to use a botnet (a network of Internet-connected devices infected with malicious software and controlled as a group without the owners' knowledge).
+
+In fact, the 16,777,216 addresses in 4.0.0.0/8, and the 131,072 addresses in 173.204.0.0/15 are assigned to the United States of America.
+
+The 37.9.0.0/16 addresses are assigned in these blocks:
+
+  37.9.0.0/20  4096 RU Russian Federation
+ 37.9.16.0/20  4096 KZ Kazakhstan
+ 37.9.32.0/20  4096 RU Russian Federation
+ 37.9.48.0/21  2048 RU Russian Federation
+ 37.9.56.0/21  2048 GB United Kingdom
+ 37.9.64.0/18 16384 RU Russian Federation
+37.9.128.0/21  2048 RU Russian Federation
+37.9.136.0/21  2048 FR France
+37.9.144.0/20  4096 RU Russian Federation
+37.9.160.0/21  2048 NL Netherlands
+37.9.168.0/21  2048 SK Slovakia
+37.9.176.0/21  2048 CY Cyprus
+37.9.184.0/21  2048 DE Germany
+37.9.192.0/21  2048 CZ Czechia
+37.9.200.0/21  2048 TR Turkey
+37.9.208.0/21  2048 HU Hungary
+37.9.216.0/21  2048 NL Netherlands
+37.9.224.0/20  4096 IT Italy
+37.9.240.0/21  2048 RU Russian Federation
+37.9.248.0/21  2048 IR Iran
+Similarly, the 213.180.0.0/16, 5.255.0.0/16, 141.8.0.0/16, 87.250.0.0/16, and5.45.0.0/16 blocks are assigned multiple countries.
+
+The 178.154.0.0/16 block is assigned to:
+
+  178.154.0.0/17 32768 BY Belarus
+178.154.128.0/17 32768 RU Russian Federation
+Generally, targeting a /16 block of addresses is not the correct range. In practical terms, it's not possible to block every address assigned to the Russian Federation, and as your list shows, attacks can come from almost anywhere.
+
+Example: How to find a block for an IP address
+
+Find the IP block for address 37.9.10.64, assuming a typical version of the command-line tool whois.
+
+Find the Regional Internet Registry for the address with whois -a 37.9.10.64. The listing shows that the address is assigned to the European registry with whois service at whois.ripe.net.
+
+Look up the address block for IP 37.9.10.64 with whois -h whois.ripe.net 37.9.10.64. The listing shows that 37.9.0.0/20 is assigned to CTV Dominanta Ltd in Russia.
+
+Regional Internet Registries
+
+Current IP assignments are available from the Regional Internet Registries:
+
+http://www.apnic.net - Asia Pacific
+http://www.ripe.net - Europe
+http://www.arin.net - North America
+http://www.lacnic.net - Latin America
+http://www.afrinic.net - Africa and Indian Ocean
