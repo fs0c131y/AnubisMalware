@@ -1,0 +1,82 @@
+Usage:
+pretty.pretty_file(filename, ***options*)
+
+Reads a CSV file and prints visually the data as table to a new file. filename, is the given CSV file. The optional ***options* keyword arguments is the union of Python's Standard Library csv module Dialects and Formatting Parameters and the following list:
+
+new_delimiter: the new column separator (default " | ")
+border: boolean value if you want to print the border of the table (default True)
+border_vertical_left: the left border of the table (default "| ")
+border_vertical_right: the right border of the table (default " |")
+border_horizontal: the top and bottom border of the table (default "-")
+border_corner_tl: the top-left corner of the table (default "+ ")
+border_corner_tr: the top-right corner of the table (default " +")
+border_corner_bl: the bottom-left corner of the table (default same as border_corner_tl)
+border_corner_br: the bottom-right corner of the table (default same as border_corner_tr)
+header: boolean value if the first row is a table header (default True)
+border_header_separator: the border between the header and the table (default same as border_horizontal)
+border_header_left: the left border of the table header (default same as border_corner_tl)
+border_header_right: the right border of the table header (default same as border_corner_tr)
+new_filename: the new file's filename (default "new_" + filename)
+newline: defines how the rows of the table will be separated (default "\n")
+Example:
+
+import pretty_csv
+pretty_csv.pretty_file("test.csv", header=False, border=False, delimiter="|")
+Python 3:
+
+This is a Python 2 implementation. For Python 3, you have to change the 2 occurrences of the line open(filename, "rb") as input: to open(filename, "r", newline="") as input: since csv.reader in Python 3 wants the file to be opened in text mode.
+
+Module:
+import csv
+import os
+
+def pretty_file(filename, **options):
+    """
+    @summary:
+        Reads a CSV file and prints visually the data as table to a new file.
+    @param filename:
+        is the path to the given CSV file.
+    @param **options:
+        the union of Python's Standard Library csv module Dialects and Formatting Parameters and the following list:
+    @param new_delimiter:
+        the new column separator (default " | ")
+    @param border:
+        boolean value if you want to print the border of the table (default True)
+    @param border_vertical_left:
+        the left border of the table (default "| ")
+    @param border_vertical_right:
+        the right border of the table (default " |")
+    @param border_horizontal:
+        the top and bottom border of the table (default "-")
+    @param border_corner_tl:
+        the top-left corner of the table (default "+ ")
+    @param border_corner_tr:
+        the top-right corner of the table (default " +")
+    @param border_corner_bl:
+        the bottom-left corner of the table (default same as border_corner_tl)
+    @param border_corner_br:
+        the bottom-right corner of the table (default same as border_corner_tr)
+    @param header:
+        boolean value if the first row is a table header (default True)
+    @param border_header_separator:
+        the border between the header and the table (default same as border_horizontal)
+    @param border_header_left:
+        the left border of the table header (default same as border_corner_tl)
+    @param border_header_right:
+        the right border of the table header (default same as border_corner_tr)
+    @param newline:
+        defines how the rows of the table will be separated (default "\n")
+    @param new_filename:
+        the new file's filename (*default* "/new_" + filename)
+    """
+
+    #function specific options
+    new_delimiter           = options.pop("new_delimiter", " | ")
+    border                  = options.pop("border", True)
+    border_vertical_left    = options.pop("border_vertical_left", "| ")
+    border_vertical_right   = options.pop("border_vertical_right", " |")
+    border_horizontal       = options.pop("border_horizontal", "-")
+    border_corner_tl        = options.pop("border_corner_tl", "+ ")
+    border_corner_tr        = options.pop("border_corner_tr", " +")
+    border_corner_bl        = options.pop("border_corner_bl", border_corner_tl)
+    border_corner_br   
