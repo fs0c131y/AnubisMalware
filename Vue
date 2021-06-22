@@ -1,0 +1,140 @@
+{
+    // vue
+    "Vue": {
+        "prefix": "v",
+        "body": [
+            "<template>",
+            "",
+            "</template>"
+        ],
+        "description": "v"
+    },
+    // TypeScript
+    "TypeScript": {
+        "prefix": "t",
+        "body": [
+            "import { Component, Vue } from 'vue-property-decorator';",
+            "",
+            "@Component",
+            "export default class $TM_FILENAME_BASE extends Vue {",
+            "",
+            "}"
+        ],
+        "description": "TypeScript"
+    },
+    // vue pug
+    "Vue Pug": {
+        "prefix": "vp",
+        "body": [
+            "<template lang=\"pug\">",
+            "",
+            "</template>",
+            ""
+        ],
+        "description": "Vue + Pug"
+    },
+    // vue ts
+    "Vue TypeScript": {
+        "prefix": "vt",
+        "body": [
+            "<template>",
+            "",
+            "</template>",
+            "",
+            "<script lang=\"ts\">",
+            "import { Component, Vue } from 'vue-property-decorator';",
+            "",
+            "@Component",
+            "export default class $TM_FILENAME_BASE extends Vue {",
+            "",
+            "}",
+            "</script>",
+            ""
+        ],
+        "description": "Vue + TypeScript"
+    },
+    // vue ts mixins
+    "Vue TypeScript Mixins": {
+        "prefix": "vtm",
+        "body": [
+            "<script lang=\"ts\">",
+            "import { Component, Vue } from 'vue-property-decorator';",
+            "",
+            "@Component",
+            "export default class $TM_FILENAME_BASE extends Vue {",
+            "",
+            "}",
+            "</script>",
+            ""
+        ],
+        "description": "Vue TypeScript Mixins"
+    },
+    // vue pug ts
+    "Vue Pug TypeScript": {
+        "prefix": "vpt",
+        "body": [
+            "<template lang=\"pug\">",
+            "",
+            "</template>",
+            "",
+            "<script lang=\"ts\">",
+            "import { Component, Vue } from 'vue-property-decorator';",
+            "",
+            "@Component",
+            "export default class $TM_FILENAME_BASE extends Vue {",
+            "",
+            "}",
+            "</script>",
+            ""
+        ],
+        "description": "Vue + Pug + TypeScript"
+    },
+    // vue pug ts scss
+    "Vue Pug TypeScript Scss": {
+        "prefix": "vpts",
+        "body": [
+            "<template lang=\"pug\">",
+            "",
+            "</template>",
+            "",
+            "<script lang=\"ts\">",
+            "import { Component, Vue } from 'vue-property-decorator';",
+            "",
+            "@Component",
+            "export default class $TM_FILENAME_BASE extends Vue {",
+            "",
+            "}",
+            "</script>",
+            "",
+            "<style lang=\"scss\">",
+            "",
+            "</style>",
+            ""
+        ],
+        "description": "Vue + Pug + TypeScript + Scss"
+    },
+    // vue pug ts scss scoped
+    "Vue Pug TypeScript Scss-Scoped": {
+        "prefix": "vptss",
+        "body": [
+            "<template lang=\"pug\">",
+            "",
+            "</template>",
+            "",
+            "<script lang=\"ts\">",
+            "import { Component, Vue } from 'vue-property-decorator';",
+            "",
+            "@Component",
+            "export default class $TM_FILENAME_BASE extends Vue {",
+            "",
+            "}",
+            "</script>",
+            "",
+            "<style lang=\"scss\" scoped>",
+            "",
+            "</style>",
+            ""
+        ],
+        "description": "Vue + Pug + TypeScript + Scss-Scoped"
+    }
+}
