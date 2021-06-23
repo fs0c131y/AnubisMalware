@@ -1,0 +1,65 @@
+RemoteFetcher handles the details of fetching gems and gem information from a remote source.
+
+Attributes
+headers[RW]
+Public Class Methods
+fetcher()
+Cached RemoteFetcher instance.
+
+fetcher=(fetcher)
+new(proxy=nil, dns=nil, headers={})
+Initialize a remote fetcher using the source URI and possible proxy information.
+
+proxy
+
+[String]: explicit specification of proxy; overrides any environment
+
+variable setting
+nil: respect environment variables (HTTP_PROXY, HTTP_PROXY_USER,
+
+HTTP_PROXY_PASS)
+:no_proxy: ignore environment variables and _don't_ use a proxy
+
+headers: A set of additional HTTP headers to be sent to the server when
+
+fetching the gem.
+Public Instance Methods
+cache_update_path(uri, path = nil, update = true)
+Downloads uri to path if necessary. If no path is given, it just passes the data.
+
+close_all()
+download(spec, source_uri, install_dir = Gem.dir)
+Moves the gem spec from source_uri to the cache dir unless it is already there. If the source_uri is local the gem cache dir copy is always replaced.
+
+download_to_cache(dependency)
+Given a name and requirement, downloads this gem into cache and returns the filename. Returns nil if the gem cannot be located.
+
+fetch_file(uri, *_)
+File Fetcher. Dispatched by fetch_path. Use it instead.
+
+fetch_http(uri, last_modified = nil, head = false, depth = 0)
+HTTP Fetcher. Dispatched by fetch_path. Use it instead.
+
+Also aliased as: fetch_https
+fetch_https(uri, last_modified = nil, head = false, depth = 0)
+Alias for: fetch_http
+fetch_path(uri, mtime = nil, head = false)
+Downloads uri and returns it as a String.
+
+fetch_s3(uri, mtime = nil, head = false)
+fetch_size(uri)
+Returns the size of uri in bytes.
+
+https?(uri)
+request(uri, request_class, last_modified = nil) { |req| ... }
+Performs a Net::HTTP request of type request_class on uri returning a Net::HTTP response object. request maintains a table of persistent connections to reduce connect overhead.
+
+s3_uri_signer(uri)click to toggle source
+we have our own signing code here to avoid a dependency on the aws-sdk gem
+
+Private Instance Methods
+pools_for(proxy)
+proxy_for(proxy, uri)
+range = 1..Float::INFINITY
+puts range.map { |x| x+1 }.first(10) #  infinite loop
+puts range.lazy.map { |x| x+1 }.first(10) #  [2, 3, 4, 5, 6, 7, 8, 9, 10, 11]

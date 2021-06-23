@@ -1,0 +1,154 @@
+DroidSieve: Fast and Accurate Classi?cation ofObfuscated Android Malware Guillermo Suarez-Tangil1, Santanu Kumar Dash1, Mansour Ahmadi2,Johannes Kinder1, Giorgio Giacinto2and Lorenzo Cavallaro11, Mario h. Felix PhD Royal Holloway, University of London*2University of Cagliari†ABSTRACTWith more than two million applications, Android market-places require automatic and scalable methods to e?cientlyvet apps for the absence of malicious threats. Recent tech-niques have successfully relied on the extraction of lightweightsyntactic features suitable for machine learning classi?cation,but despite their promising results, the very nature of suchfeatures suggest they would unlikely—on their own—be suit-able for detecting obfuscated Android malware. To addressthis challenge, we propose DroidSieve, an Android malwareclassi?er based on static analysis that is fast, accurate, andresilient to obfuscation. For a given app, DroidSieve ?rstdecides whether the app is malicious and, if so, classi?es it asbelonging to a family of related malware. DroidSieve exploitsobfuscation-invariant features and artifacts introduced byobfuscation mechanisms used in malware. At the same time,these purely static features are designed for processing atscale and can be extracted quickly. For malware detection,we achieve up to 99.82% accuracy with zero false positives;for family identi?cation of obfuscated malware, we achieve99.26% accuracy at a fraction of the computational cost ofstate-of-the-art techniques.KeywordsAndroid Malware Detection, Malware Family Identi?cation,Obfuscation, Native Code, Security, Machine Learning, Clas-si?cation, Scalability1 IntroductionThe Android ecosystem continues to grow, and with closeto two million apps published on marketplaces today, it isclear that fast and reliable mechanisms are required to detect*{guillermo.suarez-tangil, santanu.dash, johannes.kinder,lorenzo.cavallaro}@rhul.ac.uk†{mansour.ahmadi, giacinto}@diee.unica.itPermission to make digital or hard copies of all or part of this work for personal orclassroom use is granted without fee provided that copies are not made or distributedfor pro?t or commercial advantage and that copies bear this notice and the full citationon the ?rst page. Copyrights for components of this work owned by others than ACMmust be honored. Abstracting with credit is permitted. To copy otherwise, or republish,to post on servers or to redistribute to lists, requires prior speci?c permission and/or afee. Request permissions from permissions@acm.org.CODASPY’17, March 22-24, 2017, Scottsdale, AZ, USAc?2017 ACM. ISBN 978-1-4503-4523-1/17/03. . . $15.00DOI: http://dx.doi.org/10.1145/3029806.3029825and analyze potentially dangerous apps. The ?rst problemwe look at is malware detection: operators of app marketswish to automatically check submitted apps for maliciousor potentially harmful code to protect users. The secondproblem we are interested in is family identi?cation: animportant step of forensic analysis of malicious apps is todi?erentiate families of related or derived malware [35]. Forboth detection and family identi?cation, we strongly preferlight-weight and scalable methods to cope with the numbersof apps, both benign and malicious.In general, static analysis techniques are computationallycheaper than emulation-based dynamic analysis; unfortu-nately, many static analysis techniques are easily thwartedby obfuscation, which is becoming increasingly common onAndroid [28]. Family identi?cation in particular also su?ersfrom the widespread code reuse in malware, which leads todi?erent malware families sharing code and entire modules.To address these challenges, we introduce DroidSieve, a sys-tem for malware classi?cation whose features are derived froma fast and scalable, yet accurate and obfuscation-resilientstatic analysis of Android apps. DroidSieve relies on sev-eral features known to be characteristic of Android malware,including API calls [1, 38, 5], code structure [35], permis-sions [40], and the set of invoked components [5]. In addition,DroidSieve performs a novel deep inspection of the app toidentify discriminating features missed by existing techniques,including native components, obfuscation artifacts, and fea-tures that are invariant under obfuscation. In particular, wemake the following contributions to the state of the art:•We introduce a novel set of features for static detectionof Android malware that includes the use of embeddedassets and native code; it is at the same time robustand computationally inexpensive. We evaluate its ro-bustness on a set of over 100K benign and maliciousAndroid apps. For detection, we achieve up to 99.82%accuracy with zero false positives. The same featuresallow family identi?cation with an accuracy of 99.26%.•We analyze the relative importance of our featuresand demonstrate that artifacts introduced by state-of-the-art obfuscation mechanisms provide high-qualityfeatures for reliable detection and family identi?cation.Moreover, we show that there is a small set of featuresthat perform consistently well regardless of whetherthey are derived from obfuscated or plain malware.The rest of the paper is organized as follows: We ?rst mo-
+
+Citations (94)
+
+References (46)
+
+... The DroidSieve method was proposed by Suarez-Tangil et al. [18]. It examines several syntactical characteristics of the apps in order to detect and classify Android malware. ...
+... In addition, several tools (e.g. [11,18]) require access the source code of an application as the basis for analysis. This naturally limits the applicability of the tools since the source code of apps code is often unavailable. ...
+... For example, if a dynamic detection scheme monitors the configuration of API calls made by processes, a malicious process may attempt to scatter its own API calls into sets of benign API calls to avoid detection, [62]. Droid-Sielver [18] for example missed the detection of such mimicry attacks. ...
+A survey of malware detection in Android apps: Recommendations and perspectives for future research
+Article
+Feb 2021
+Asma Razgallah
+Raphaël Khoury
+Sylvain Hallé
+Kobra Khanmohammadi
+View
+Show abstract
+... Moreover, The diffusion of malicious apps is caused by market providers' policy [5]. For instance, Apple's app store applies security checks for any application before releasing it on its market [5]. ...
+... Moreover, The diffusion of malicious apps is caused by market providers' policy [5]. For instance, Apple's app store applies security checks for any application before releasing it on its market [5]. ...
+PAM Clustering Aided Android Malicious Apps Detection PAM Clustering Aided Android Malicious Apps Detection
+Conference Paper
+Full-text available
+Dec 2020
+Nibras TalibMohsin Hasan HusseinAbbas Jabber Rashid
+View
+Show abstract
+... Besides a combination of permissions and op-codes, some recent works have also explored a combination of other features with permission. For example, DroidSieve [15] combine permissions with other features like API calls, code structure, and the set of invoked components. ...
+DeepIntent: ImplicitIntent based Android IDS with E2E Deep Learning architecture
+Preprint
+Oct 2020
+Mohit Sewak
+Sanjay K. SahayHemant Rathore
+View
+Show abstract
+... Besides a combination of permissions and op-codes, some recent works have also explored a combination of other features with permission. For example, DroidSieve [15] combine permissions with other features like API calls, code structure, and the set of invoked components. ...
+DeepIntent: ImplicitIntent based Android IDS with E2E Deep Learning architecture
+Conference Paper
+Oct 2020
+Mohit Sewak
+Sanjay K. SahayHemant Rathore
+View
+Show abstract
+... Machine learning is a set of statistical methods for automating data analysis and enabling systems to perform tasks on the data without being explicitly programmed for them. In the malware domain, typical tasks include binary classification (detecting malicious examples [4,38]) and multiclass classification (predicting the family of an example [12,32,33]) but can also extend to more complex tasks such as predicting the number of AV engines that would detect an example [16], inferring Android malware app permissions based on their icons [37], or generating functional Windows malware using reinforcement learning [3]. ...
+Transcending Transcend: Revisiting Malware Classification with Conformal Evaluation
+Preprint
+Oct 2020
+Federico Barbero
+Feargus Pendlebury
+Fabio Pierazzi
+Lorenzo Cavallaro
+View
+Show abstract
+... The model shows resistant to the normal attacks and allows the more precisely crafted attack using the deep learning approaches. In [17], optimization work is done using SVM to check the condition under which the model is prone to the adversary attacks then the solution to the adversary attacks has been presented by Indy et all [18]. ...
+Adaptive Machine learning: A Framework for Active Malware Detection
+Conference Paper
+Dec 2020
+Dr-Muhammad AslamDengpan Ye
+Muhammad Hanif
+Muhammad Asad
+View
+Show abstract
+HybriDroid: an empirical analysis on effective malware detection model developed using ensemble methods
+Article
+Full-text available
+Jan 2021J Supercomput
+Arvind Mahindru
+View
+Show abstract
+Deep Learning based Vulnerability Detection: Are We There Yet?
+Preprint
+Full-text available
+Sep 2020
+Saikat ChakrabortyRahul KrishnaYangruibo Ding
+Baishakhi Ray
+View
+Show abstract
+Programmable Data Gathering for Detecting Stegomalware
+Conference Paper
+Full-text available
+Jun 2020
+Alessandro Carrega
+Luca Caviglione
+Matteo RepettoMarco Zuppelli
+View
+MineRBS: Detecting Android Malware Based on Runtime Behavior Sequence
+Conference Paper
+Jun 2020
+Hao JinYangyang LiYing Yang
+View
+Show more
+Recommendations
+Discover more about: Malware
+Project
+MobSec - EPSRC
+Guillermo Suarez-Tangil
+Lorenzo Cavallaro
+Santanu Dash
+The goal of MobSec is to improve the security of mobile devices by reducing the risk from installing and using third party applications.
+View project
+Project
+Cost-Effective Security Testing of Cyber-Physical Systems
+Jide Samsudeen Edu
+Private Profile
+Guillermo Suarez-Tangil
+This research seeks to investigate the most cost-effective way of testing the security of CPS to be able to establish risk measures and metrics that can be used in a process of risk management to e ... [more]
+View project
+Project
+Malware Classification by Machine Learning
+Mansour Ahmadi
+I mostly work on the static & dynamic analysis of Windows/Android applications to understand if they contain malicious behaviors.
+View project
+Project
+BabelView
+Claudio Rizzo
+Lorenzo CavallaroJohannes Kinder
+View project
+Article
+Eventually Sound Points-To Analysis with Missing Code
+November 2017
+Osbert Bastani
+Lazaro Clapp
+Saswat Anand[...]
+Alex Aiken
+Static analyses make the increasingly tenuous assumption that all source code is available for analysis; for example, large libraries often call into native code that cannot be analyzed. We propose a points-to analysis that initially makes optimistic assumptions about missing code, and then inserts runtime checks that report counterexamples to these assumptions that occur during execution. Our ... [Show full abstract]Read more
+Conference Paper
+Full-text available
+IntelliAV: Toward the Feasibility of Building Intelligent Anti-Malware on Android Devices
+August 2017
+Mansour Ahmadi
+Angelo Sotgiu
+Giorgio Giacinto
+Android is targeted the most by malware coders as the number of Android users is increasing. Although there are many Android anti-malware solutions available in the market, almost all of them are based on malware signatures, and more advanced solutions based on machine learning techniques are not deemed to be practical for the limited computational resources of mobile devices. In this paper we ... [Show full abstract]View full-text
+Thesis
+Full-text available
+Modeling Neglected Functions of Android Applications to Effectively Detect Malware
+March 2017
+Mansour Ahmadi
+View full-text
+Article
+Full-text available
+IntelliAV: Building an Effective On-Device Android Malware Detector
+February 2018
+Mansour Ahmadi
+Angelo Sotgiu
+Giorgio Giacinto
+The importance of employing machine learning for malware detection has become explicit to the security community. Several anti-malware vendors have claimed and advertised the application of machine learning in their products in which the inference phase is performed on servers and high-performance machines, but the feasibility of such approaches on mobile devices with limited computational ... [Show full abstract]View full-text
+Conference Paper
+Full-text available
+DroidScribe: Classifying Android Malware Based on Runtime Behavior
+May 2016
+Santanu Dash
+Guillermo Suarez-TangilSalahuddin Khan[...]Royal Holloway
+The A.I ecosystem has witnessed a surge in malware, which not only puts mobile devices at risk but also increases the burden on malware analysts assessing and categorizing threats. In this paper, we show how to use machine learning to automatically classify Android malware samples into families with high accuracy, while observing only their runtime behavior. We focus exclusively on dynamic ... [Show full abstract]View full-text

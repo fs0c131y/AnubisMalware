@@ -1,0 +1,145 @@
+
+Airline codes
+IATA	ICAO	Airline	Call sign	Country	Comments
+ABA	Aero-Beta	Aerobeta	Germany	
+DJT	Dreamjet	DREAMJET	France	2014[1]
+DPJ	Delta Private Jets	JET CARD	United States	Changed from ELJ/ELITE JET in 2014[2]
+DJR	Desert Jet	DESERT FLIGHT	United States	
+DLA	Air Dolomiti	DOLOMITI	Italy	
+DLC	Dehong South Asian General Aviation	SOARCOPTER	China	Was Ruili Jingcheng Helicopters
+DNS	Dniproaviaservis Company		Ukraine	
+DRF	Dream Flyers Training Center		Spain	
+DMF	DMCFLY	DEMLY	Mexico	
+NAU	Danaus Lineas Aereas	DANAUS	Mexico	
+GDF	DF Aviation		Ukraine	
+DDA	D & D Aviation	DUSTY	United States	
+DNK	D&K Aviation	DIRECT JET	United States	
+V5	VPA	DanubeWings	VIP TAXI	Slovakia	Former names VIP Air and VIP Wings
+DHE	DAP Helicopteros	HELIDAP	Chile	
+VLF	DFS UK Limited	VOLANTE	United Kingdom	
+WD	DSR	DAS Air Cargo	DAIRAIR	Uganda	
+RKC	DAS Airlines	DAS CONGO	Democratic Republic of the Congo	
+DX	DTR	DAT Danish Air Transport	DANISH	Denmark	
+ENT	DAT Enterprise Limited	DATENT	United Kingdom	defunct
+BDN	DERA Boscombe Down	GAUNTLET	United Kingdom	
+DSN	DESNA	DESNA	Ukraine	
+DET	DETA Air	SAMAL	Kazakhstan	
+DGO	DGO Jet	DGO JET	Mexico	
+DAE	DHL Aero Expreso	YELLOW	Panama	
+D0	DHK	DHL Air Limited	WORLD EXPRESS	United Kingdom	DHL Air UK
+DHV	DHL Aviation	WORLDSTAR	South Africa	
+ES	DHX	DHL International	DILMUN	Bahrain	
+L3	JOS	DHL de Guatemala		Guatemala	
+RSK	DSWA	REDSKIN	United States	
+D3	DAO	Daallo Airlines	DALO AIRLINES	Djibouti	
+N2	DAG	Dagestan Airlines	DAGAL	Russia	
+DHA	Dahla Airlines		Democratic Republic of Congo	
+DCS	DC Aviation	TWIN STAR	Germany	
+DCX	Daimler-Chrysler	DAIMLER	United States	
+DKA	Daka		Kazakhstan	
+DLR	Dala Air Services	DALA AIR	Nigeria	
+H8	KHB	Dalavia	DALAVIA	Russia	
+DXP	Dallas Express Airlines	DALLAS EXPRESS	United States	
+DAS	Damascene Airways	AIRDAM	Syrian Arab Republic	
+DSA	Danbury Airways	DANBURY AIRWAYS	United States	
+DOP	Dancopter	DANCOPTER	Denmark	
+DAF	Danish Air Force	DANISH AIRFORCE	Denmark	
+DD	DDL	Danish Air Lines		Denmark	defunct
+DAR	Danish Army	DANISH ARMY	Denmark	
+DNY	Danish Navy	DANISH NAVY	Denmark	
+DNU	Danu Oro Transportas	DANU	Lithuania	
+DRT	Darta	DARTA	France	
+0D	DWT	Darwin Airline	DARWIN	Switzerland	
+DSQ	Dasab Airlines	DASAB AIR	Uganda	
+DSH	Dash Air Charter	DASH CHARTER	United States	
+GOB	Dash Aviation	PILGRIM	United Kingdom	
+DGX	Dasnair	DASNA	Switzerland	
+DAB	Dassault Aviation		France	
+CVF	Dassault Falcon Jet Corporation	CLOVERLEAF	United States	
+DSO	Dassault Falcon Service	DASSAULT	France	
+DTN	Data International	DATA AIR	Sudan	
+XDT	Date Transformation Corp		United States	
+D5	DAU	Dauair	DAUAIR	Germany	
+DCO	David Crawshaw Consultants Limited		United Kingdom	
+DWN	Dawn Air	DAWN AIR	United States	
+DJS	DayJet	DAYJET	United States	
+DAY	Daya Aviation	DAYA	Sri Lanka	
+DHC	De Havilland	DEHAVILLAND	Canada	
+IAY	Deadalos Flugtbetriebs	IASON	Austria	
+DAA	Decatur Aviation	DECUR	United States	
+DKN	Deccan Charters	DECCAN	India	
+JDC	Deere and Company	JOHN DEERE	United States	
+DWR	Delaware Skyways	DELAWARE	United States	
+DEA	Delta Aerotaxi	JET SERVICE	Italy	
+SNO	Delta Air Charter	SNOWBALL	Canada	
+ELJ	Delta Private Jets	ELITE JET	United States	Changed to DPJ/JET CARD in 2014[2]
+DL	DAL	Delta Air Lines	DELTA	United States	
+KMB	Delta Engineering Aviation	KEMBLEJET	United Kingdom	
+DLI	Delta Express International	DELTA EXPRESS	Ukraine	
+DSU	Delta State University	DELTA STATE	United States	
+J7	DNM	Denim Air	DENIM	Netherlands	Defunct
+FEC	Denver Express	FALCON EXPRESS	United States	
+DJT	Denver Jet	DENVER JET	United States	
+FGC	Departament d'Agricultura de la Generalitat de Catalunya	FORESTALS	Spain	
+DRY	Deraya Air Taxi	DERAYA	Indonesia	
+DRX	Des R Cargo Express		Mauritania	
+MIZ	Desarrollo Milaz	MILAZ	Mexico	
+DTY	Destiny Air Services	DESTINY	Sierra Leone	
+2A		Deutsche Bahn		Germany	
+1I	AMB	Deutsche Rettungsflugwacht	CIVIL AIR AMBULANCE	Germany	
+LFO	Deutsches Zentrum fur Luft-und Raumfahrt EV	LUFO	Germany	
+DIS	Di Air	DI AIR	Serbia	
+SPK	Diamond Aviation	SPARKLE	United States	
+DRB	Didier Rousset Buy	DIDIER	Chile	
+DGT	Digital Equipment Corporation	DIGITAL	United States	
+DIP	Diplomatic Freight Services	DIPFREIGHT	United Kingdom	
+ENA	Dirección General de Aviación Civil y Telecomunicasciones	ENA	Spain	
+DIA	Direct Air	BLUE SKY	United States	
+XAP	Direct Air trading as Midway Connection	MID-TOWN	United States	
+DCT	Direct Flight		United Kingdom	
+SXP	Direct Fly	EXPRESS SKY	Poland	defunct
+AW	DIR	Dirgantara Air Service	DIRGANTARA	Indonesia	
+DCV	Discover Air	DISCOVER	United States	
+DH	DVA	Discovery Airways	DISCOVERY AIRWAYS	United States	
+XDS	Dispatch Services		United States	
+DIX	Dix Aviation	DIX FLIGHT	Germany	
+DEE	Dixie Airways	TACAIR	United States	
+Z6	UDN	Dniproavia	DNIEPRO	Ukraine	
+FDN	Dolphin Air	FLYING DOLPHIN	United Arab Emirates	
+IXX	Dolphin Express Airlines	ISLAND EXPRESS	United States	
+DPL	Dome Petroleum	DOME	Canada	
+YU	ADM	Dominair	DOMINAIR	Dominican Republic	defunct; former IATA code: SS; former name: Aerolíneas Dominicanas, ICAO code no longer allocated
+MYO	Dominguez Toledo (Grupo Mayoral)	MAYORAL	Spain	
+DO	DOA	Dominicana de Aviación	DOMINICANA	Dominican Republic	defunct
+E3	DMO	Domodedovo Airlines	DOMODEDOVO	Russia	defunct
+DVB	Don Avia	DONSEBAI	Kazakhstan	
+DON	Donair Flying Club	DONAIR	United Kingdom	
+D9	DNV	Donavia	DONAVIA	Russia	formerly Aeroflot-Don
+5D	UDC	DonbassAero	DONBASS AERO	Ukraine	
+DAD	Dorado Air	DORADO AIR	Dominican Republic	
+DOR	Dornier	DORNIER	Germany	
+DAV	Dornier Aviation Nigeria	DANA AIR	Nigeria	
+DOM	Dos Mundos	DOS MUNDOS	Dominican Republic	
+DCA	Dreamcatcher Airways	DREAM CATCHER	United Kingdom	
+KB	DRK	Druk Air	ROYAL BHUTAN	Bhutan	
+DRE	Drummond Island Air	MICHIGAN	United States	
+DUB	Dubai Airwing	DUBAI	United Arab Emirates	
+DBK	Dubrovnik Air	SEAGULL	Croatia	
+DUK	Ducair	LION KING	Luxembourg	
+DBJ	Duchess of Britany (Jersey) Limited	DUCHESS	United Kingdom	
+LPD	UK Royal/HRH Duke of York	LEOPARD	United Kingdom	
+DUN	Dun'Air	DUNAIR	Mauritania	
+PHD	Duncan Aviation	PANHANDLE	United States	
+VVF	Dunyaya Bakis Hava Tasimaciligi	WORLDFOCUS	Turkey	
+DUO	Duo Airways	FLY DUO	United Kingdom	
+DJE	Durango Jet	DURANGO JET	Mexico	
+DNL	Dutch Antilles Express	DUTCH ANTILLES	Netherlands Antilles	
+DCE	Dutch Caribbean Express	DUTCH CARIBBEAN	Netherlands Antilles	
+DBR	Dutchbird	DUTCHBIRD	Netherlands	ICAO code allocated to another company, call sign no longer allocated
+DBR	Dobrolet LLC	DOBROLET	Russia	Defunct, ICAO code still allocated (2017)
+DFS	Dwyer Aircraft Services	DWYAIR	United States	
+XDY	Dynair Services		United States	
+DNR	Dynamair Aviation	DYNAMAIR	Canada	
+DYE	Dynamic Air	DYNAMIC	Netherlands	ICAO code and call sign no longer allocated
+DYA	Dynamic Airways	DYNAMIC AIR	United States	
+DI	BAG	Dba	SPEEDWAY	Germany	Merged into Air Berlin

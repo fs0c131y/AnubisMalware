@@ -1,0 +1,52 @@
+  #include <iostream>
+
+using namespace std;
+
+class Person {
+    char *name;
+    int age;
+public:
+    Person ();
+    Person (char *, int age = 18);
+    Person (const Person &p);
+    void output ();
+};
+
+Person ::Person() {
+    name = new char[20]();
+    age = 0;
+}
+
+Person ::Person(char *str, int age) {
+    name = new char[50]();
+    strcpy(name, str);
+    this->age = age;
+}
+
+Person ::Person(const Person &p) {
+    strcpy(name, p.name);
+    age = p.age;
+}
+
+void Person ::output() {
+    cout << "\nName = " << name;
+    cout << "\nAge = " << age << endl;
+    cout <<"-------------------------------------------------------------------------------------------------------------------------\n";
+}
+
+int main () {
+    Person p1;
+    Person p2("Name");
+    Person p3 ("Name", 20);
+    Person p4 = p2;
+
+    cout << "\nThe Output of the Object Called by Default Constructor\n\n";
+    p1.output();
+    cout << "\nThe Output of the Object Called by Parameterised Constructor with Default Argument\n\n";
+    p2.output();
+    cout << "\nThe Output of the Object Called by Parameterised Constructor Overriding Default Argument \n\n";
+    p3.output();
+    cout << "\nThe Output of the Object Called by Copy Constructor (Copying p2 Object that is the second output)\n\n";
+    p4.output();
+    return 0;
+}
