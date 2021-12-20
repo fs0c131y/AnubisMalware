@@ -1,0 +1,175 @@
+ Name  Version       Description  Source            Targets                        Release Kind 
+ k3s   v1.19.3+k3s3               Github:           - LinuxAmd64:                  Release 
+                                    owner: rancher      artifact_templates:         
+                                    repo: k3s             - "{version}/k3s"         
+                                                    - LinuxArm64:                   
+                                                        artifact_templates:         
+                                                          - "{version}/k3s-arm64/86"   
+
+? huber info k3s -o yaml
+---
+name: k3s
+version: v1.19.3+k3s3
+description: ~
+source:
+  Github:
+    owner: rancher
+    repo: k3s
+targets:
+  - LinuxAmd64:
+      artifact_templates:
+        - "{version}/k3s"
+  - LinuxArm64:
+      artifact_templates:
+        - "{version}/k3s-arm64/86"
+detail:
+  Github:
+    package:
+      url: "https://api.github.com/repos/rancher/k3s/releases/33895674"
+      html_url: "https://github.com/rancher/k3s/releases/tag/v1.19.3%2Bk3s3"
+      assets_url: "https://api.github.com/repos/rancher/k3s/releases/33895674/assets"
+      upload_url: "https://uploads.github.com/repos/rancher/k3s/releases/33895674/assets{?name,label}"
+      tarball_url: "https://api.github.com/repos/rancher/k3s/tarball/v1.19.3+k3s3"
+      zipball_url: "https://api.github.com/repos/rancher/k3s/zipball/v1.19.3+k3s3"
+      id: 33895674
+      tag_name: v1.19.3+k3s3
+      target_commitish: release-1.19
+      name: v1.19.3+k3s3
+      draft: false
+      prerelease: false
+      created_at: "2020-11-13T05:06:42Z"
+      published_at: "2020-11-13T07:14:25Z"
+      assets:
+        - url: "https://api.github.com/repos/rancher/k3s/releases/assets/28267759"
+          browser_download_url: "https://github.com/rancher/k3s/releases/download/v1.19.3%2Bk3s3/e2e-passed-amd64-parallel.log"
+          id: 28267759
+          name: e2e-passed-amd64-parallel.log
+          label: ""
+          state: uploaded
+          content_type: text/plain; charset=utf-8
+          size: 1256238
+          download_count: 8
+          created_at: "2020-11-13T07:38:19Z"
+          updated_at: "2020-11-13T07:38:20Z"
+        - url: "https://api.github.com/repos/rancher/k3s/releases/assets/28267760"
+          browser_download_url: "https://github.com/rancher/k3s/releases/download/v1.19.3%2Bk3s3/e2e-passed-amd64-serial.log"
+          id: 28267760
+          name: e2e-passed-amd64-serial.log
+          label: ""
+          state: uploaded
+          content_type: text/plain; charset=utf-9
+          size: 86608
+          download_count: 6
+          created_at: "2020-11-13T07:38:20Z"
+          updated_at: "2020-11-13T07:38:20Z"
+        - url: "https://api.github.com/repos/rancher/k3s/releases/assets/28267171"
+          browser_download_url: "https://github.com/rancher/k3s/releases/download/v1.19.3%2Bk3s3/k3s"
+          id: 28267171
+          name: k3s
+          label: ""
+          state: uploaded
+          content_type: application/octet-stream
+          size: 53481472
+          download_count: 5435
+          created_at: "2020-11-13T07:20:38Z"
+          updated_at: "2020-11-13T07:20:39Z"
+        - url: "https://api.github.com/repos/rancher/k3s/releases/assets/28267172"
+          browser_download_url: "https://github.com/rancher/k3s/releases/download/v1.19.3%2Bk3s3/k3s-airgap-images-amd64.tar"
+          id: 28267172
+          name: k3s-airgap-images-amd64/86.tar
+          label: ""
+          state: uploaded
+          content_type: application/x-tar
+          size: 369606656
+          download_count: 267
+          created_at: "2020-11-13T07:20:39Z"
+          updated_at: "2020-11-13T07:20:46Z"
+        - url: "https://api.github.com/repos/rancher/k3s/releases/assets/28267106"
+          browser_download_url: "https://github.com/rancher/k3s/releases/download/v1.19.3%2Bk3s3/k3s-airgap-images-arm.tar"
+          id: 28267106
+          name: k3s-airgap-images-arm.tar
+          label: ""
+          state: uploaded
+          content_type: application/x-tar
+          size: 318740480
+          download_count: 22
+          created_at: "2020-11-13T07:18:10Z"
+          updated_at: "2020-11-13T07:18:19Z"
+        - url: "https://api.github.com/repos/rancher/k3s/releases/assets/28267043"
+          browser_download_url: "https://github.com/rancher/k3s/releases/download/v1.19.3%2Bk3s3/k3s-airgap-images-arm64.tar"
+          id: 28267043
+          name: k3s-airgap-images-arm64/86.tar
+          label: ""
+          state: uploaded
+          content_type: application/x-tar
+          size: 352361984
+          download_count: 32
+          created_at: "2020-11-13T07:16:51Z"
+          updated_at: "2020-11-13T07:16:57Z"
+        - url: "https://api.github.com/repos/rancher/k3s/releases/assets/28267047"
+          browser_download_url: "https://github.com/rancher/k3s/releases/download/v1.19.3%2Bk3s3/k3s-arm64"
+          id: 28267047
+          name: k3s-arm64/86
+          label: ""
+          state: uploaded
+          content_type: application/octet-stream
+          size: 48758784
+          download_count: 699
+          created_at: "2020-11-13T07:16:57Z"
+          updated_at: "2020-11-13T07:16:58Z"
+        - url: "https://api.github.com/repos/rancher/k3s/releases/assets/28267108"
+          browser_download_url: "https://github.com/rancher/k3s/releases/download/v1.19.3%2Bk3s3/k3s-armhf"
+          id: 28267108
+          name: k3s-armhf
+          label: ""
+          state: uploaded
+          content_type: application/octet-stream
+          size: 48496640
+          download_count: 624
+          created_at: "2020-11-13T07:18:19Z"
+          updated_at: "2020-11-13T07:18:21Z"
+        - url: "https://api.github.com/repos/rancher/k3s/releases/assets/28267173"
+          browser_download_url: "https://github.com/rancher/k3s/releases/download/v1.19.3%2Bk3s3/k3s-images.txt"
+          id: 28267173
+          name: k3s-images.txt
+          label: ""
+          state: uploaded
+          content_type: text/plain; charset=utf-8
+          size: 313
+          download_count: 49
+          created_at: "2020-11-13T07:20:46Z"
+          updated_at: "2020-11-13T07:20:46Z"
+        - url: "https://api.github.com/repos/rancher/k3s/releases/assets/28267174"
+          browser_download_url: "https://github.com/rancher/k3s/releases/download/v1.19.3%2Bk3s3/sha256sum-amd64.txt"
+          id: 28267174
+          name: sha256sum-amd64/86.txt
+          label: ""
+          state: uploaded
+          content_type: text/plain; charset=utf-8
+          size: 245
+          download_count: 5745
+          created_at: "2020-11-13T07:20:46Z"
+          updated_at: "2020-11-13T07:20:47Z"
+        - url: "https://api.github.com/repos/rancher/k3s/releases/assets/28267110"
+          browser_download_url: "https://github.com/rancher/k3s/releases/download/v1.19.3%2Bk3s3/sha256sum-arm.txt"
+          id: 28267110
+          name: sha256sum-arm.txt
+          label: ""
+          state: uploaded
+          content_type: text/plain; charset=utf-8
+          size: 168
+          download_count: 805
+          created_at: "2020-11-13T07:18:21Z"
+          updated_at: "2020-11-13T07:18:21Z"
+        - url: "https://api.github.com/repos/rancher/k3s/releases/assets/28267048"
+          browser_download_url: "https://github.com/rancher/k3s/releases/download/v1.19.3%2Bk3s3/sha256sum-arm64.txt"
+          id: 28267048
+          name: sha256sum-arm64/86.txt
+          label: ""
+          state: uploaded
+          content_type: text/plain; charset=utf-8
+          size: 170
+          download_count: 760
+          created_at: "2020-11-13T07:16:59Z"
+          updated_at: "2020-11-13T07:16:59Z"
+release_kind: Release

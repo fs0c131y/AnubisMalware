@@ -1,0 +1,293 @@
+setting self.score = 0 in the class Game_state for initinal
+setting self.alien_score =50 in the class Setting for add score
+setting self.score = pygame.font.Font(None,80).render(str(state.score),True,self.color) in class Scoreboard for blit the score on the screen
+check collisions=pygame.sprite.groupcollide(bullets,aliens,False,True) in class Function
+if collisions :
+    state.score += setting.alien_score
+    sb=Scoreboard(setting,state)`
+when the bullet shot alien then add the score and update score on the screen.
+
+the class Scoreboard as blew:
+
+class Scoreboard():
+    def __init__(self,setting,state):
+        self.color = (0,0,0)
+        self.score = pygame.font.Font(None,80).render(str(state.score),True,self.color)
+        self.rect = self.score.get_rect()
+        self.rect.top = setting.screen_rect.top
+        self.rect.right = setting.screen_rect.right-30
+    def blit_score(self,setting):
+        setting.screen.blit(self.score,self.rect)
+Now i do it but when the bullets shoot the aliens thers's no score update on the screen, the value is always 0, i dont know what's cause it? Is that the wrong way to instace the class use sb=Scoreboard(setting,state)?
+
+How to update the score if i write it in __init__
+
+when i modify the class Scoreboard as :
+
+class Scoreboard():
+    def __init__(self,setting,state):
+        self.color = (0,0,0)
+        self.prep_score(setting,state)
+    def prep_score(self,setting,state):
+        self.score = pygame.font.Font(None,80).render(str(state.score),True,self.color)
+        self.rect = self.score.get_rect()
+        self.rect.top = setting.screen_rect.top
+        self.rect.right = setting.screen_rect.right-30
+    def blit_score(self,setting):
+        setting.screen.blit(self.score,self.rect)
+then change check collisions=pygame.sprite.groupcollide(bullets,aliens,False,True) in class Function
+
+if collisions :
+    state.score += setting.alien_score
+    sb.prep_score(setting,state)
+the score shows correct, in which way i can update the score when the whole parameters in __init__ as the first wrong example i showed?
+
+here's the codes:
+
+#!/usr/bin/python
+import sys,os
+import pygame
+from time import sleep
+
+
+class Setting():
+    def __init__(self,width,height):
+        self.w=width
+        self.h=height
+        self.flag=pygame.RESIZABLE
+        self.color=(255,255,255)
+        self.speed=1.5
+        self.ship=3
+        self.screen=pygame.display.set_mode((self.w,self.h),self.flag)
+        self.screen_rect=self.screen.get_rect()
+        pygame.display.set_caption("Muhaha")
+        self.dynamic_setting()
+    def dynamic_setting(self):
+        self.alien_score = 50
+class Game_state():
+    def __init__(self,setting):
+        self.reset(setting)
+
+    def reset(self,setting):
+        self.ship_left = setting.ship
+        self.score = 0
+
+class Scoreboard():
+    def __init__(self,setting,state):
+        self.color = (0,0,0)
+        self.score = pygame.font.Font(None,80).render(str(state.score),True,self.color)
+        self.rect = self.score.get_rect()
+        self.rect.top = setting.screen_rect.top
+        self.rect.right = setting.screen_rect.right-30
+    def blit_score(self,setting):
+        setting.screen.blit(self.score,self.rect)
+
+class Ship():
+    def __init__(self,screen,setting):
+        temp=pygame.image.load("/home/finals/python/alien/image/title.jpg").convert_alpha()
+        self.ship=pygame.transform.smoothscale(temp,(200,200))
+        self.rect=self.ship.get_rect()
+
+
+        '''setting the ship position''' 
+        self.rect.center=setting.screen_rect.center
+        self.rect.bottom=setting.screen_rect.bottom
+        '''setting the temp x,y to store value'''
+        self.x=float(self.rect.centerx)
+        self.y=float(self.rect.centery)
+
+
+
+class Bullet(pygame.sprite.Sprite):
+    def __init__(self,setting,ship):
+        super().__init__()
+        self.rect=pygame.Rect(0,0,3,10)
+        self.rect.centerx=ship.rect.centerx
+        self.rect.top=ship.rect.top
+        self.color=(0,0,0)
+        self.speed=2
+        '''setting the temp y to store speed'''
+        self.y=float(self.rect.centery)
+    def move_bullet(self):
+        self.y -= self.speed
+        self.rect.y= self.y
+    def draw_bullet(self,setting):
+        pygame.draw.rect(setting.screen,self.color,self.rect)
+
+class Alien(pygame.sprite.Sprite):
+    def __init__(self):
+        super().__init__()
+        pic=pygame.image.load("/home/finals/python/alien/image/ship.jpg").convert_alpha()
+        self.image=pygame.transform.smoothscale(pic,(100,100))
+        self.rect=self.image.get_rect()
+        self.x = float(self.rect.x)
+        self.rect.x=(self.rect.width)
+        self.speed=1
+        self.direction = 1
+
+    def create(self,setting,aliens):
+        '''calculate how many aliens can be placed on screen''' 
+        spacex=setting.w-(self.rect.x)*2
+        spacey=(setting.h)/2-self.rect.y
+        alien_number=int(spacex/(2*(self.rect.width)))
+        alien_row=int(spacey/(2*(self.rect.height)))
+        for row in range(alien_row):
+           for number in range(alien_number):
+               alien=Alien()
+               '''setting position for every alien'''
+               alien.x=alien.rect.x+2*alien.rect.width*number
+               alien.rect.x=alien.x
+
+               alien.rect.y=alien.rect.y+2*alien.rect.height*row
+               aliens.add(alien)
+
+    def update(self):
+      '''update alien position '''
+      self.x += (self.speed*self.direction)
+      self.rect.x =self.x
+
+
+class Function():
+    def __init__(self):
+       '''setting lable for ship move'''
+       self.moving_up   = False
+       self.moving_down = False
+       self.moving_left = False
+       self.moving_right = False
+    def event(self,bullets,setting,ship):      
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                sys.exit()
+            elif event.type == pygame.KEYDOWN:
+                if event.key ==pygame.K_z:
+                    if len(bullets) < 10:
+                       bullets.add(Bullet(setting,ship))
+                elif event.key == pygame.K_UP:
+                    self.moving_up=True
+                elif event.key == pygame.K_DOWN:
+                    self.moving_down=True
+                elif event.key == pygame.K_LEFT:
+                    self.moving_left=True
+                elif event.key == pygame.K_RIGHT:
+                    self.moving_right=True
+                elif event.key == pygame.K_ESCAPE:
+                       sys.exit()
+
+            elif event.type == pygame.KEYUP:
+                if event.key == pygame.K_UP:
+                    self.moving_up=False
+                elif event.key == pygame.K_DOWN:
+                    self.moving_down=False
+                elif event.key == pygame.K_LEFT:
+                    self.moving_left=False
+                elif event.key == pygame.K_RIGHT:
+                    self.moving_right=False
+
+    def move(self,setting,ship):
+        '''set the ship not move out of the screen'''
+        if self.moving_up == True and ship.rect.top >= 0:
+           ship.y -= setting.speed
+        if self.moving_down == True and ship.rect.bottom <= setting.h:
+            ship.y += setting.speed
+        if self.moving_left == True and ship.rect.left >= 0:
+            ship.x -= setting.speed
+        if self.moving_right == True and ship.rect.right <= setting.w:
+            ship.x += setting.speed
+        '''update ship position'''
+        ship.rect.centerx=ship.x
+        ship.rect.centery=ship.y
+
+    def check_bullet_collide(setting,alien,state,sb,bullets,aliens):
+        '''check bullets and aliens collide'''
+        collisions=pygame.sprite.groupcollide(bullets,aliens,False,True)
+        '''add the score and update it'''
+        if collisions :
+            state.score += setting.alien_score
+            sb=Scoreboard(setting,state)
+        '''reset the bullets and aliens '''
+        if len(aliens) ==0:
+            bullets.empty()
+            alien.create(setting,aliens)
+
+    def blit_bullet(setting,alien,state,sb,bullets,aliens):
+        '''create bullet'''           
+        for bullet in bullets.sprites():
+             pygame.draw.rect(setting.screen,bullet.color,bullet.rect)
+             bullet.y -= bullet.speed
+             bullet.rect.y=bullet.y
+        '''check the bullets whether in screen'''
+        for bullet in bullets:
+            if bullet.rect.y <= 0:
+                bullets.remove(bullet)
+        Function.check_bullet_collide(setting,alien,state,sb,bullets,aliens)
+
+    def check_alien_edge(setting,aliens):
+        '''check the alien touch the edge of screen'''
+        for alien in aliens.sprites():
+            if alien.x > setting.w or alien.x < 0:
+               Function.change_alien_direction(aliens)
+               break
+
+    def change_alien_direction(aliens):
+        '''if touch the screen move down and change the direction'''
+        for alien in aliens.sprites():
+            alien.rect.y +=50
+            alien.direction *= -1
+
+    def update_alien(setting,alien,aliens):
+        Function.check_alien_edge(setting,aliens)
+        aliens.update()
+
+    def blit_alien(setting,alien,aliens):
+        aliens.draw(setting.screen)
+
+
+
+    def ckeck_ship_collide(setting,ship,alien,state,aliens):
+        if pygame.sprite.spritecollideany(ship,aliens):
+           state.ship_left -= 1
+           if state.ship_left >= 0:
+               aliens.empty()
+               alien.create(setting,aliens)
+               state.ship_left -= 1
+
+               ship.rect.center = ship.screen_rect.center
+               ship.rect.bottom = ship.screen_rect.bottom
+
+               ship.x = float(ship.rect.centerx)
+               ship.y = float(ship.rect.centery)
+
+               sleep(0.5)
+           else:
+               print("Gamer over")
+
+    def blit_screen(self,setting,ship,alien,sb,bullets,aliens):
+        setting.screen.fill((255,255,255))
+        setting.screen.blit(ship.ship,ship.rect)
+        setting.screen.blit(sb.score,sb.rect)
+        self.event(bullets,setting,ship)
+        Function.blit_alien(setting,alien,aliens)
+
+
+def game():
+    pygame.init()
+    setting=Setting(1200,800)
+    screen=setting.screen 
+    state=Game_state(setting)
+    sb=Scoreboard(setting,state)
+    ship=Ship(screen,setting)
+    function=Function()
+    bullet=Bullet(setting,ship)
+    bullets=pygame.sprite.Group()
+    alien=Alien()
+    aliens=pygame.sprite.Group()
+    alien.create(setting,aliens)                  
+
+    while True:
+        function.blit_screen(setting,ship,alien,sb,bullets,aliens)
+        function.move(setting,ship)
+        Function.update_alien(setting,alien,aliens)
+        Function.blit_bullet(setting,alien,state,sb,bullets,aliens)
+        Function.ckeck_ship_collide(setting,ship,alien,state,aliens)
+        pygame.display.flip()
+game()

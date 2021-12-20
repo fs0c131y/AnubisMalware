@@ -1,0 +1,971 @@
+The following are a collection of recently-released pen test tools. I update this list every time that there is a new post and when I find a new one around the Internet. The rest of the repository has hundreds of additional cybersecurity and pen test tools.
+
+Obfuscation_Detection - Collection Of Scripts To Pinpoint Obfuscated Code
+cve_manager_VS - A Collection Of Python Apps And Shell Scripts To Email An Xlsx Spreadsheet Of New Vulnerabilities In The NIST CVE Database And Their Associated Products On A Daily Schedule
+Retoolkit - Reverse Engineer's Toolkit
+Smogcloud - Find Cloud Assets That No One Wants Exposed
+Gitrecon - OSINT Tool To Get Information From A Github Profile And Find GitHub User'S Email Addresses Leaked On Commits
+OSCP-Exam-Report-Template-Markdown - Markdown Templates For Offensive Security OSCP, OSWE, OSCE, OSEE, OSWP Exam Report
+Kraker - Distributed Password Brute-Force System That Focused On Easy Use
+CTF-Party - A Ruby Library To Enhance And Speed Up Script/Exploit Writing For CTF Players
+Godehashed - Tool That Uses The Dehashed.Com API To Search For Compromised Assets
+ProxyLogon - PoC Exploit for Microsoft Exchange
+Netmap.Js - Fast Browser-Based Network Discovery Module
+Vajra - A Highly Customi zable Target And Scope Based Automated Web Hacking Framework To Automate Boring Recon Tasks
+Subcert - An Subdomain Enumeration Tool, That Finds All The Subdomains From Certificate Transparency Logs
+Mole - A Framework For Identifying And Exploiting Out-Of-Band Application Vulnerabilities
+Invoke-SocksProxy - Socks Proxy, And Reverse Socks Server Using Powershell
+Reverse-Shell-Generator - Hosted Reverse Shell Generator With A Ton Of Functionality
+OffensivePipeline - Tool To Download, Compile (Without Visual Studio) And Obfuscate C# Tools For Red Team Exercises
+Rafel-Rat - Android Rat Written In Java With WebPanel For Controlling Victims
+AnonX - An Encrypted File Transfer Via AES-256-CBC
+Strafer - A Tool To Detect Potential Infections In Elasticsearch Instances
+Turbo-Intruder - A Burp Suite Extension For Sending Large Numbers Of HTTP Requests And Analyzing The Results
+Lazy-RDP - Script For AutomRDPatic Scanning And Brute-Force
+SnitchDNS - Database Driven DNS Server With A Web UI
+Genisys - Powerful Telegram Members Scraping And Adding Toolkit
+Confused - Tool To Check For Dependency Confusion Vulnerabilities In Multiple Package Management Systems
+DLLHSC - DLL Hijack SCanner A Tool To Assist With The Discovery Of Suitable Candidates For DLL Hijacking
+PowerSharpPack - Many usefull offensive CSharp Projects wraped into Powershell for easy usage
+Girsh - Automatically Spawn A Reverse Shell Fully Interactive
+HTTP Bridge - Send TCP Stream Packets Over Simple HTTP Request
+Gitls - Enumerate Git Repository URL From List Of URL / User / Org
+Go-RouterSocks - Router Sock. One Port Socks For All The Others.
+Writehat - A Pentest Reporting Tool Written In Python
+HiddenEyeReborn - HiddenEye With Completely New Codebase And Better Features Set
+Sub404 - A Python Tool To Check Subdomain Takeover Vulnerability
+Procrustes - A Bash Script That Automates The Exfiltration Of Data Over Dns In Case We Have A Blind Command Execution On A Server Where All Outbound Connections Except DNS Are Blocked
+packetStrider - A Network Packet Forensics Tool For SSH
+Chameleon - Customizable Honeypots For Monitoring Network Traffic, Bots Activities And Username\Password Credentials (DNS, HTTP Proxy, HTTP, HTTPS, SSH, POP3, IMAP, STMP, RDP, VNC, SMB, SOCKS5, Redis, TELNET, Postgres And MySQL)
+uEmu - Tiny Cute Emulator Plugin For IDA Based On Unicorn.
+Kubestriker - A Blazing Fast Security Auditing Tool For Kubernetes
+CertEagle - Asset monitoring utility using real time CT log feeds
+PyBeacon - A Collection Of Scripts For Dealing With Cobalt Strike Beacons In Python
+SharpSphere - .NET Project For Attacking vCenter
+Teatime - An RPC Attack Framework For Blockchain Nodes
+Threatspec - Continuous Threat Modeling, Through Code
+Fake-Sms - A Simple Command Line Tool Using Which You Can Skip Phone Number Based SMS Verification By Using A Temporary Phone Number That Acts Like A Proxy
+OWASP ASST (Automated Software Security Toolkit) - A Novel Open Source Web Security Scanner
+Halogen - Automatically Create YARA Rules From Malicious Documents
+StandIn - A Small .NET35/45 AD Post-Exploitation Toolkit
+WdToggle - A Beacon Object File (BOF) For Cobalt Strike Which Uses Direct System Calls To Enable WDigest Credential Caching
+Gargamel - A Forensic Evidence Acquirer
+Pillager - Filesystems For Sensitive Information With Go
+Gatekeeper - First Open-Source DDoS Protection System
+CornerShot - Amplify Network Visibility From Multiple POV Of Other Hosts
+OpenWifiPass - An Open Source Implementation Of Apple's Wi-Fi Password Sharing Protocol In Python
+ScareCrow - Payload Creation Framework Designed Around EDR Bypass
+APT-Hunter - Threat Hunting Tool For Windows Event Logs Which Made By Purple Team Mindset To Provide Detect APT Movements Hidden In The Sea Of Windows Event Logs To Decrease The Time To Uncover Suspicious Activity
+Kali Linux 2021.1 - Penetration Testing and Ethical Hacking Linux Distribution
+BlackMamba - C2/post-exploitation Framework
+BugBountyScanner - A Bash Script And Docker Image For Bug Bounty Reconnaissance
+HaE - BurpSuite Highlighter And Extractor
+RAT-el - An Open Source Penetration Test Tool That Allows You To Take Control Of A Windows Machine
+Remote-Method-Guesser - Tool For Java RMI Enumeration And Bruteforce Of Remote Methods
+Horusec - An Open Source Tool That Improves Identification Of Vulnerabilities In Your Project With Just One Command
+Perfusion - Exploit For The RpcEptMapper Registry Key Permissions Vulnerability (Windows 7 / 2088R2 / 8 / 2012)
+PE-Packer - A Simple Windows X86 PE File Packer Written In C And Microsoft Assembly
+SSB - A Faster And Simpler Way To Bruteforce SSH Server
+DirDar - A Tool That Searches For (403-Forbidden) Directories To Break It And Get Dir Listing On It
+SSRFuzz - A Tool To Find Server Side Request Forgery Vulnerabilities, With CRLF Chaining Capabilities
+Galer - A Fast Tool To Fetch URLs From HTML Attributes By Crawl-In
+WireBug - A Toolset For Voice-over-IP Penetration Testing
+Ghidra_Kernelcache - A Ghidra Framework For iOS Kernelcache Reverse Engineering
+CrackerJack - Web GUI for Hashcat
+Chimera - A (Shiny And Very Hack-Ish) PowerShell Obfuscation Script Designed To Bypass AMSI And Commercial Antivirus Solutions
+Gitlab-Watchman - Monitoring GitLab For Sensitive Data Shared Publicly
+OSV - Open Source Vulnerability DB And Triage Service
+UDdup - Urls De-Duplication Tool For Better Recon
+Damn-Vulnerable-GraphQL-Application - Damn Vulnerable GraphQL Application Is An Intentionally Vulnerable Implementation Of Facebook's GraphQL Technology, To Learn And Practice GraphQL Security
+Project iKy v2.7.0 - Tool That Collects Information From An Email And Shows Results In A Nice Visual Interface
+Darkdump - Search The Deep Web Straight From Your Terminal
+Diceware-Password-Generator - Python Implementation Of The Diceware Password Generating Algorithm
+BaphoDashBoard - Dashboard For Manage And Generate The Baphomet Ransomware
+XSSTRON - Electron JS Browser To Find XSS Vulnerabilities Automatically
+PatrowlHears - PatrowlHears - Vulnerability Intelligence Center / Exploits
+Patriot-Linux - Host IDS For Desktop Users
+ShellShockHunter - It's A Simple Tool For Test Vulnerability Shellshock
+Cypher - Crypto Cipher Encode Decode Hash
+ATTPwn - Tool Designed To Emulate Adversaries
+Wifi-Password - Quickly Fetch Your WiFi Password And If Needed, Generate A QR Code Of Your WiFi To Allow Phones To Easily Connect
+Ditto - A Tool For IDN Homograph Attacks And Detection
+COM-Code-Helper - Two IDAPython Scripts Help You To Reconstruct Microsoft COM (Component Object Model) Code
+Creepy - A Geolocation OSINT Tool. Offers Geolocation Information Gathering Through Social Networking Platforms
+ExecuteAssembly - Load/Inject .NET Assemblies
+GPOZaurr - Group Policy Eater Is A PowerShell Module That Aims To Gather Information About Group Policies
+Cloudlist - A Tool For Listing Assets From Multiple Cloud Providers
+Geacon - Implement CobaltStrike's Beacon In Go
+Satellite - Easy-To-Use Payload Hosting
+Phpvuln - Audit Tool To Find Common Vulnerabilities In PHP Source Code
+Linux-Chrome-Recon - An Information Gathering Tool Used To Enumerate All Possible Data About An User From Google-Chrome Browser From Any Linux Distribution
+OpenCSPM - Open Cloud Security Posture Management Engine
+Uroboros - A GNU/Linux Monitoring And Profiling Tool Focused On Single Processes
+BurpMetaFinder - Burp Suite Extension For Extracting Metadata From Files
+Flawfinder - A Static Analysis Tool For Finding Vulnerabilities In C/C++ Source Code
+Web-Brutator - Modular Web Interfaces Bruteforcer
+MOSE - Post Exploitation Tool For Configuration Management Servers.
+OpenCVE - CVE Alerting Platform
+PSC - E2E Encryption For Multi-Hop Tty Sessions Or Portshells + TCP/UDP Port Forward
+SSRF-King - SSRF Plugin For Burp Automates SSRF Detection In All Of The Request
+CSSG - Cobalt Strike Shellcode Generator
+Arbitrium-RAT - A Cross-Platform, Fully Undetectable Remote Access Trojan, To Control Android, Windows And Linux
+JWT Key ID Injector - Simple Python Script To Check Against Hypothetical JWT Vulnerability
+Tritium - Password Spraying Framework
+SharpEDRChecker - Checks Running Processes, Process Metadata, DLLs Loaded Into Your Current Process And The Each DLLs Metadata, Common Inst all Directories, Installed Services And Each Service Binaries Metadata, Installed Drivers And Each Drivers Metadata, All For The Presence Of Known Defensive Products Such As AV's, EDR's And Logging Tools
+Emba - An Analyzer For Linux-based Firmware Of Embedded Devices
+Batea - AI-based, Context-Driven Network Device Ranking
+Duf - Disk Usage/Free Utility (Linux, BSD, macOS & Windows)
+Shellex - C-shellcode To Hex Converter, Handy Tool For Paste And Execute Shellcodes In Gdb, Windbg, Radare2, Ollydbg, X64Dbg, Immunity Debugger And 010 Editor
+Recon Simplified with Spyse
+Recon Simplified with Spyse
+WSuspicious - A Tool To Abuse Insecure WSUS Connections For Privilege Escalations
+ATMMalScan - Tool for Windows which helps to search for malware traces on an ATM during the DFIR process
+Xnuspy - An iOS Kernel Function Hooking Framework For Checkra1N'Able Devices
+Zmap - A Fast Single Packet Network Scanner Designed For Internet-wide Network Surveys
+Sigurlx - A Web Application Attack Surface Mapping Tool
+MetaFinder - Search For Documents In A Domain Through Google
+WPCracker - WordPress User Enumeration And Login Brute Force Tool
+CDK - Zero Dependency Container Penetration Toolkit
+Reconftw - Simple Script For Full Recon
+MobileHackersWeapons - Mobile Hacker's Weapons / A Collection Of Cool Tools Used By Mobile Hackers
+Git-Wild-Hunt - A Tool To Hunt For Credentials In Github Wild AKA Git*Hunt
+HosTaGe - Low Interaction Mobile Honeypot
+BigBountyRecon - This Tool Utilises 58 Different Techniques To Expediate The Process Of Intial Reconnaissance On The Target Organisation
+Token-Hunter - Collect OSINT For GitLab Groups And Members And Search The Group And Group Members' Snippets, Issues, And Issue Discussions For Sensitive Data That May Be Included In These Assets
+ImHex - A Hex Editor For Reverse Engineers, Programmers And People That Value Their Eye Sight When Working At 3 AM.
+MyJWT - A Cli For Cracking, Testing Vulnerabilities On Json Web Token (JWT)
+SysWhispers2 - AV/EDR Evasion Via Direct System Calls
+ByteDance-HIDS - A Cloud-Native Host-Based Intrusion Detection Solution Project To Provide Next-Generation Threat Detection And Behavior Audition With Modern Architecture
+Ssh-Mitm - Ssh Mitm Server For Security Audits Supporting Public Key Authentication, Session Hijacking And File Manipulation
+Stegbrute - Fast Steganography Bruteforce Tool Written In Rust Useful For CTF's
+Pineapple-MK7-REST-Client - WiFi Hacking Workflow With Pineapple Mark 7 API
+K55 - Linux X86_64 Process Injection Utility | Manipulate Processes With Customized Payloads
+Umbrella_android - Digital And Physical Security Advice App
+RadareEye - A Tool Made For Specially Scanning Nearby devices [BLE, Bluetooth And Wifi] And Execute Our Given Command On Our System When The Target Device Comes In-Between Range
+ProtOSINT - A Python Script That Helps You Investigate Protonmail Accounts And ProtonVPN IP Addresses
+Sigurls - A Reconnaissance Tool, It Fetches URLs From AlienVault's OTX, Common Crawl, URLScan, Github And The Wayback Machine
+pongoOS - A Pre-Boot Execution Environment For Apple Boards
+Wprecon - A Vulnerability Recognition Tool In CMS Wordpress, 100% Developed In Go
+MUD-Visualizer - A Tool To Visualize MUD Files
+Pidrila - Python Interactive Deepweb-oriented Rapid Intelligent Link Analyzer
+Longtongue - Customized Password/Passphrase List Inputting Target Info
+Emp3R0R - Linux Post-Exploitation Framework Made By Linux User
+Solarflare - SolarWinds Orion Account Audit / Password Dumping Utility
+Exif-Gps-Tracer - A Python Script Which Allows You To Parse GeoLocation Data From Your Image Files Stored In A dataset
+UhOh365 - A Script That Can See If An Email Address Is Valid In Office365 (User/Email Enumeration)
+Sarenka - OSINT Tool - Data From Services Like Shodan, Censys Etc. In One Place
+Hack-Tools v0.3.0 - The All-In-One Red Team Extension For Web Pentester
+MaskPhish - Give A Mask To Phishing URL
+Drow - Injects Code Into ELF Executables Post-Build
+EvtMute - Apply A Filter To The Events Being Reported By Windows Event Logging
+XSS-Scanner - XSS Scanner That Detects Cross-Site Scripting Vulnerabilities In Website By Injecting Malicious Scripts
+MOSINT - OSINT Tool For Emails
+Urlhunter - A Recon Tool That Allows Searching On URLs That Are Exposed Via Shortener Services
+Byp4Xx - Simple Bash Script To Bypass "403 Forbidden" Messages With Well-Known Methods Discussed In #Bugbountytips
+HyperDbg - The Source Code Of HyperDbg Debugger
+Oblivion - Data Leak Checker And OSINT Tool
+RogueWinRM - Windows Local Privilege Escalation From Service Account To System
+Top 20 Most Popular Hacking Tools in 2020
+Wynis - Audit Windows Security With Best Practice
+Proxify - Swiss Army Knife Proxy Tool For HTTP/HTTPS Traffic Capture, Manipulation, And Replay On The Go
+Social-Analyzer - API And Web App For Analyzing And Finding A Person Profile Across +300 Social Media Websites (Detections Are Updated Regularly)
+ApkLeaks - Scanning APK File For URIs, Endpoints And Secrets
+Aura - Python Source Code Auditing And Static Analysis On A Large Scale
+Vulmap - Web Vulnerability Scanning And Verification Tools
+Censys-Python - An Easy-To-Use And Lightweight API Wrapper For The Censys Search Engine
+Swego - Swiss Army Knife Webserver In Golang
+GRecon - Your Google Recon Is Now Automated
+Kenzer - Automated Web Assets Enumeration And Scanning
+Grawler - Tool Which Comes With A Web Interface That Automates The Task Of Using Google Dorks, Scrapes The Results, And Stores Them In A File
+0D1N v3.4 - Tool For Automating Customized Attacks Against Web Applications (Full Made In C Language With Pthreads, Have A Fast Performance)
+SharpMapExec - A Sharpen Version Of CrackMapExec
+Watcher - Open Source Cybersecurity Threat Hunting Platform
+Sploit - Go Package That Aids In Binary Analysis And Exploitation
+Fawkes - Tool To Search For Targets Vulnerable To SQL Injection (Performs The Search Using Google Search Engine)
+Bheem - Simple Collection Of Small Bash-Scripts Which Runs Iteratively To Carry Out Various Tools And Recon Process
+Bento - A Minimal Fedora-Based Container For Penetration Tests And CTF With The Sweet Addition Of GUI Applications
+Scilla - Information Gathering Tool (DNS/Subdomain/Port Enumeration)
+Go365 - An Office365 User Attack Tool
+E9Patch - A Powerful Static Binary Rewriting Tool
+PoshBot - Powershell-based Bot Framework
+Freki - Malware Analysis Platform
+Ghost Framework - An Android Post-Exploitation Framework That Exploits The Android Debug Bridge To R emotely Access An Android Device
+APKLab - Android Reverse Engineering WorkBench For VS Code
+ToRat - A Remote Administation Tool Written In Go Using Tor As A Transport Mechanism And RPC For Communication
+WSMan-WinRM - A Collection Of Proof-Of-Concept Source Code And Scripts For Executing Remote Commands Over WinRM Using The WSMan.Automation COM Object
+Stegseek - Worlds Fastest Steghide Cracker, Chewing Through Millions Of Passwords Per Second
+Slipstream - NAT Slipstreaming Allows An Attacker To Remotely Access Any TCP/UDP Services Bound To A Victim Machine, Bypassing The Victim's NAT/firewall, Just By The Victim Visiting A Website
+403Bypasser - Burpsuite Extension To Bypass 403 Restricted Directory
+Gustave - Embedded OS kernel fuzzer
+Carnivore - Tool For Assessing On-Premises Microsoft Servers Authentication Such As ADFS, Skype, Exchange, And RDWeb
+Sak1To-Shell - Multi-threaded C2 Server And Reverse Shell Client Written In Pure C
+DarkSide - Tool Information Gathering And Social Engineering
+RESTler - The First Stateful REST API Fuzzing Tool For Automatically Testing Cloud Services Through Their REST APIs And Finding Security And Reliability Bugs In These Services
+Depix - Recovers Passwords From Pixelized Screenshots
+Packer-Fuzzer - A Fast And Efficient Scanner For Security Detection Of Websites Constructed By Javascript Module Bundler Such As Webpack
+Wp_Hunter - Static Analysis Of Wordpress Plugins
+Baphomet - Basic Concept Of How A Ransomware Works
+Js-X-Ray - JavaScript And Node.js Open-Source SAST Scanner (A Static Analysis Of Detecting Most Common Malicious Patterns)
+Hijackthis - A Free Utility That Finds Malware, Adware And Other Security Threats
+Karkinos - Penetration Testing And Hacking CTF's Swiss Army Knife With: Reverse Shell Handling - Encoding/Decoding - Encryption/Decryption - Cracking Hashes / Hashing
+ADSearch - A Tool To Help Query AD Via The LDAP Protocol
+Obfuscator - The Program Is Designed To Obfuscate The Shellcode
+Pytmipe - Python Library And Client For Token Manipulations And Impersonations For Privilege Escalation On Windows
+Enum4Linux-Ng - A Next Generation Version Of Enum4Linux (A Windows/Samba Enumeration Tool) With Additional Features Like JSON/YAML Export
+Hacktory platform packed with new game-playing features
+Aclpwn.Py - Active Directory ACL Exploitation With BloodHound
+JSFScan.sh - Automation For Javascript Recon In Bug Bounty
+Fast-Security-Scanners - Security Checks For Your Researches
+Hacktory platform packed with new game-playing features
+Terrascan - Detect Compliance And Security Violations Across Infrastructure As Code To Mitigate Risk Before Provisioning Cloud Native Infrastructure
+OnionSearch - A Script That Scrapes Urls On Different .Onion Search Engines
+GG-AESY - Hide Cool Stuff In Images
+Fortiscan - A High Performance FortiGate SSL-VPN Vulnerability Scanning And Exploitation Tool
+Admin-Scanner - This Tool Is Design To Find Admin Panel Of Any Website By Using Custom Wordlist Or Default Wordlist Easily
+Talon - A Password Guessing Tool That Targets The Kerberos And LDAP Services Within The Windows Active Directory Environment
+Webscan - Browser-based Network Scanner And local-IP Detection
+Tracee - Container And System Event Tracing Using eBPF
+DNSx - A Fast And Multi-Purpose DNS Toolkit Allow To Run Multiple DNS Queries Of Your Choice With A List Of User-Supplied Resolvers
+Damn-Vulnerable-Bank - Vulnerable Banking Application For Android
+N1QLMap - The Tool Exfiltrates Data From Couchbase Database By Exploiting N1QL Injection Vulnerabilities
+Bunkerized-Nginx - Nginx Docker Image Secure By Default
+RedShell - An interactive command prompt that executes commands through proxychains and automatically logs them on a Cobalt Strike team server
+Wsb-Detect - Tool To Detect If You Are Running In Windows Sandbox ("WSB")
+UAFuzz - Binary-level Directed Fuzzing For Use-After-Free Vulnerabilities
+Xerror - Fully Automated Pentesting Tool
+ToothPicker - An In-Process, Coverage-Guided Fuzzer For iOS
+Osi.Ig - Information Gathering Instagram
+Amlsec - Automated Security Risk Identification Using AutomationML-based Engineering Data
+SIRAS - Security Incident Response Automated Simulations
+Fuzzilli - A JavaScript Engine Fuzzer
+Routopsy - A Toolkit Built To Attack Often Overlooked Networking Protocols
+Invoke-Antivm - Powershell Tool For VM Evasion
+Bulwark - An Organizational Asset And Vulnerability Management Tool, With Jira Integration, Designed For Generating Application Security Reports
+Doctrack - Tool To Manipulate And Insert Tracking Pixels Into Office Open XML Documents (Word, Excel)
+Kali Linux 2020.4 - Penetration Testing and Ethical Hacking Linux Distribution
+Teler - Real-time HTTP Intrusion Detection
+OpenEDR - Open EDR Public Repository
+Rehex - Reverse Engineers' Hex Editor
+Gping - Ping, But With A Graph
+MacC2 - Mac Command And Control That Uses Internal API Calls Instead Of Command Line Utilities
+Garud - An Automation Tool That Scans Sub-Domains, Sub-Domain Takeover And Then Filters Out XSS, SSTI, SSRF And More Injection Point Parameters
+Go_Parser - Yet Another Golang Binary Parser For IDAPro
+FinalRecon v1.1.0 - The Last Web Recon Tool You'll Need
+Trident - Automated Password Spraying Tool
+Webshell-Analyzer - Web Shell Scanner And Analyzer
+DeepBlueCLI - a PowerShell Module for Threat Hunting via Windows Event Logs
+Feroxbuster - A Fast, Simple, Recursive Content Discovery Tool Written In Rust
+Brutto - Easy Brute Forcing To Whatever You Want
+SwiftyInsta - Instagram Unofficial Private API Swift
+Kraken - Cross-platform Yara Scanner Written In Go
+Tempomail - Generate A Custom Email Address In 1 Second And Receive Emails
+GWTMap - Tool to help map the attack surface of Google Web Toolkit
+Threagile - Agile Threat Modeling Toolkit
+JSMon - JavaScript Change Monitor for BugBounty
+Hetty - An HTTP Toolkit For Security Research
+ShowStopper - Anti-Debug tricks exploration tool
+PCWT - A Web Application That Makes It Easy To Run Your Pentest And Bug Bounty Projects
+ReconNote - Web Application Security Automation Framework Which Recons The Target For Various Assets To Maximize The Attack Surface For Security Professionals & Bug-Hunters
+paradoxiaRAT - Native Windows Remote Access Tool
+Py3Webfuzz - A Python3 Module To Assist In Fuzzing Web Applications
+NFCGate - An NFC Research Toolkit Application For Android
+Octopus WAF - Web Application Firewall Made In C Language And Use Libevent
+Leonidas - Automated Attack Simulation In The Cloud, Complete With Detection Use Cases
+FAMA - Forensic Analysis For Mobile Apps
+Scripthunter - Tool To Find JavaScript Files On Websites
+Tfsec - Security Scanner For Your Terraform Code
+Linux-Evil-Toolkit - A Framework That Aims To Centralize, Standardize And Simplify The Use Of Various Security Tools For Pentest Professionals
+Herpaderping - Process Herpaderping Bypasses Security Products By Obscuring The Intentions Of A Process
+JWT-Hack - Tool To En/Decoding JWT, Generate Payload For JWT Attack And Very Fast Cracking(Dict/Brutefoce)
+Decoder++ - An Extensible Application For Penetration Testers And Software Developers To Decode/Encode Data Into Various Formats
+CobaltStrikeScan - Scan Files Or Process Memory For CobaltStrike Beacons And Parse Their Configuration
+Manuka - A Modular OSINT Honeypot For Blue Teamers
+Pesidious - Malware Mutation Using Reinforcement Learning And Generative Adversarial Networks
+AutoGadgetFS - USB Testing Made Easy
+NoSQLi - NoSql Injection CLI Tool
+GitDorker - A Tool To Scrape Secrets From GitHub Through Usage Of A Large Repository Of Dorks
+Oregami - IDA Plugins And Scripts For Analyzing Register Usage Frame
+NTLMRawUnHide - A Python3 Script Designed To Parse Network Packet Capture Files And Extract NTLMv2 Hashes In A Crackable Format
+MalwareSourceCode - Collection Of Malware Source Code For A Variety Of Platforms In An Array Of Different Programming Languages
+Pwndoc - Pentest Report Generator
+Zap-Hud - The OWASP ZAP Heads Up Display (HUD)
+PatchChecker - Web-based Check For Windows Privesc Vulnerabilities
+Apk-Medit - Memory Search And Patch Tool On Debuggable Apk Without Root & Ndk
+SSJ - Your Everyday Linux Distribution Gone Super Saiyan
+RmiTaste - Allows Security Professionals To Detect, Enumerate, Interact And Exploit RMI Services By Calling Remote Methods With Gadgets From Ysoseria
+Taken - Takeover AWS Ips And Have A Working POC For Subdomain Takeover
+Simple-Live-Data-Collection - Simple Live Data Collection Tool
+TheCl0n3r - Tool To Download And Manage Your Git Repositories
+Eagle - Yet Another Vulnerability Scanner
+HackBrowserData - Decrypt Passwords/Cookies/History/Bookmarks From The Browser
+Mail-Swipe - Script To Create Temporary Email Addresses And Receive Emails
+Zracker - Zip File Password BruteForcing Utility Tool based on CPU-Power
+Mikrot8Over - Fast Exploitation Tool For Mikrotik RouterOS
+MEDUZA - A More Or Less Universal SSL Unpinning Tool For iOS
+Nuubi Tools - Information Ghatering, Scanner And Recon
+DamnVulnerableCryptoApp - An App With Really Insecure Crypto
+O365Enum - Enumerate Valid Usernames From Office 365 Using ActiveSync, Autodiscover V1, Or Office.Com Login Page
+Wave-Share - Serverless, Peer-To-Peer, Local File Sharing Through Sound
+Gitjacker - Leak Git Repositories From Misconfigured Websites
+NashaVM - A Virtual Machine For .NET Files And Its Runtime Was Made In C++/CLI
+SwiftBelt - A macOS Enumeration Tool Inspired By Harmjoy'S Windows-based Seatbelt Enumeration Tool
+C41N - An Automated Rogue Access Point Setup Tool
+vPrioritizer - Tool To Understand The Contextualized Risk (vPRisk) On Asset-Vulnerability Relationship Level Across The Organization
+CSRFER - Tool To Generate CSRF Payloads Based On Vulnerable Requests
+GHunt - Investigate Google Accounts With Emai
+Offering Users More For Their Activity - Similar Items Upon Checkout
+Lockphish - The First Tool For Phishing Attacks On The Lock Screen, Designed To Grab Windows Credentials, Android PIN And iPhone Passcode
+IoTMap - Research Project On Heterogeneous IoT Protocols Modelling
+Kube-Score - Kubernetes Object Analysis With Recommendations For Improved Reliability And Security
+SCREEN_KILLER - Tool To Track Progress For Reporting (Capture Screenshot, Commands And Outputs) During Pentest Engagement And OSCP
+OFFPORT_KILLER - This Tool Aims At Automating The Identification Of Potential Service Running Behind Ports Identified Manually Either Through Manual Scan Or Services Running Locally
+AdvPhishing - This Is Advance Phishing Tool! OTP PHISHING
+Timewarrior - Commandline Time Reporting
+Asnap - Tool To Render Recon Phase Easier By Providing Updated Data About Which Companies Owns Which Ipv4 Or Ipv6 Addresses
+uriDeep - Unicode Encoding Attacks With Machine Learning
+smbAutoRelay - Provides The Automation Of SMB/NTLM Relay Technique For Pentesting And Red Teaming Exercises In Active Directory Environments
+Powerglot - Encodes Offensive Powershell Scripts Using Polyglots
+Pastego - Scrape/Parse Pastebin Using GO And Expression Grammar (PEG)
+H2Csmuggler - HTTP Request Smuggling Over HTTP/2 Cleartext (H2C)
+mapCIDR - Small Utility Program To Perform Multiple Operations For A Given subnet/CIDR Ranges
+Lil-Pwny - Auditing Active Directory Passwords Using Multiprocessing In Python
+Polypyus - Learns To Locate Functions In Raw Binaries By Extracting Known Functions From Similar Binaries
+NERVE - Network Exploitation, Reconnaissance & Vulnerability Engine
+Cooolis-ms - A Server That Supports The Metasploit Framework RPC
+PwnedPasswordsChecker - Search (Offline) If Your Password (NTLM Or SHA1 Format) Has Been Leaked (HIBP Passwords List V5)
+Wacker - A WPA3 Dictionary Cracker
+SharpSecDump - .Net Port Of The Remote SAM + LSA Secrets Dumping Functionality Of Impacket'S Secretsdump.Py
+Velociraptor - Endpoint Visibility and Collection Tool
+Go-Dork - The Fastest Dork Scanner Written In Go
+PwnXSS - Vulnerability XSS Scanner Exploit
+PSMDATP - PowerShell Module For Managing Microsoft Defender Advanced Threat Protection
+SitRep - Extensible, Configurable Host Triage
+Enum4Linux - A Linux Alternative To Enum.Exe For Enumerating Data From Windows And Samba Hosts
+Dnxfirewall - A Pure Python Next Generation Firewall Built On Top Of Linux Kernel/Netfilter
+FLUFFI (Fully Localized Utility For Fuzzing Instantaneously) - A Distributed Evolutionary Binary Fuzzer For Pentesters
+GRAT2 - Command And Control (C2) Project For Learning Purpose
+VMPDump - A Dynamic VMP Dumper And Import Fixer
+Moriarty-Project - This Tool Gives Information About The Phone Number That You Entered
+Frp - A Fast Reverse Proxy To Help You Expose A Local Server Behind A NAT Or Firewall To The Internet
+CRLFuzz - A Fast Tool To Scan CRLF Vulnerability Written In Go
+Winshark - A Wireshark Plugin To Instrument ETW
+Winshark - A Wireshark Plugin To Instrument ETW
+Unimap - Scan Only Once By IP Address And Reduce Scan Times With Nmap For Large Amounts Of Data
+Bxss - A Blind XSS Injector Tool
+CRLFMap - A Tool To Find HTTP Splitting Vulnerabilities
+Zin - A Payload Injector For Bugbounties Written In Go
+dorkX - Pipe Different Tools With Google Dork Scanner
+AES Finder - Utility To Find AES Keys In Running Processes
+Croc - Easily And Securely Send Things From One Computer To Another
+ActiveDirectoryEnumeration - Enumerate AD Through LDAP With A Collection Of Helpfull Scripts Being Bundled
+Rbcd-Attack - Kerberos Resource-Based Constrained Delegation Attack From Outside Using Impacket
+WMIHACKER - A Bypass Anti-virus Software Lateral Movement Command Execution Tool
+Chimera - PowerShell Obfuscation Script Designed To Bypass AMSI And Commercial Antivirus Solutions
+DockerENT - The Only Open-Source Tool To Analyze Vulnerabilities And Configuration Issues With Running Docker Container(S) And Docker Networks
+HTTP-revshell - Powershell Reverse Shell Using HTTP/S Protocol With AMSI Bypass And Proxy Aware
+Some-Tools - Install And Keep Up To Date Some Pentesting Tools
+MZAP - Multiple Target ZAP Scanning
+Monsoon - Fast HTTP Enumerator
+Avcleaner - C/C++ Source Obfuscator For Antivirus Bypass
+Spyre - Simple YARA-based IOC Scanner
+Safety - Check Your Installed Dependencies For Known Security Vulnerabilities
+Anchore Engine - A Service That Analyzes Docker Images And Applies User-Defined Acceptance Policies To Allow Automated Container Image Validation And Certification
+Rakkess - Kubectl Plugin To Show An Access Matrix For K8S Server Resources
+Browsertunnel - Surreptitiously Exfiltrate Data From The Browser Over DNS
+Bpytop - Linux/OSX/FreeBSD Resource Monitor
+PurpleCloud - An Infrastructure As Code (IaC) Deployment Of A Small Active Directory Pentest Lab In The Cloud
+OpenRedireX - Asynchronous Open redirect Fuzzer for Humans
+SQLMap v1.4.9 - Automatic SQL Injection And Database Takeover Tool
+Autovpn - Create On Demand Disposable OpenVPN Endpoints On AWS
+VPS-Docker-For-Pentest - Create A VPS On Google Cloud Platform Or Digital Ocean Easily With The Docker For Pentest
+Hardcodes - Find Hardcoded Strings From Source Code
+Wordlist_Generator - Unique Wordlist Generator Of Unique Wordlists
+Faraday v3.12 - Collaborative Penetration Test and Vulnerability Management Platform
+H4Rpy - Automated WPA/WPA2 PSK Attack Tool
+SNIcat - Server Name Indication Concatenator
+Geo-Recon - An OSINT CLI Tool Desgined To Fast Track IP Reputation And Geo-locaton Look Up For Security Analysts
+Bbrecon - Python Library And CLI For The Bug Bounty Recon API
+SpaceSiren - A Honey Token Manager And Alert System For AWS
+LOLBITS v2.0.0 - C2 Framework That Uses Background Intelligent Transfer Service (BITS) As Communication Protocol And Direct Syscalls + Dinvoke For EDR User-Mode Hooking Evasion
+Killchain - A Unified Console To Perform The "Kill Chain" Stages Of Attacks
+CrossC2 - Generate CobaltStrike's Cross-Platform Payload
+DVS - D(COM) V(ulnerability) S(canner) AKA Devious Swiss Army Knife
+Mihari - A Helper To Run OSINT Queries & Manage Results Continuously
+SourceWolf - Amazingly Fast Response Crawler To Find Juicy Stuff In The Source Code!
+Iblessing - An iOS Security Exploiting Toolkit, It Mainly Includes Application Information Collection, Static Analysis And Dynamic Analysis
+Urlgrab - A Golang Utility To Spider Through A Website Searching For Additional Links
+Osintgram - A OSINT Tool On Instagram
+Vulnerable-AD - Create A Vulnerable Active Directory That'S Allowing You To Test Most Of Active Directory Attacks In Local Lab
+Bluescan - A Powerful Bluetooth Scanner For Scanning BR/LE Devices, LMP, SDP, GATT And Vulnerabilities!
+SharpHose - Asynchronous Password Spraying Tool In C# For Windows Environments
+Bashtop - Linux/OSX/FreeBSD Resource Monitor
+Hack-Tools - The All-In-One Red Team Extension For Web Pentester
+ezEmu - Simple Execution Of Commands For Defensive Tuning/Research
+VolExp - Volatility Explorer
+AWS Recon - Multi-threaded AWS Inventory Collection Tool With A Focus On Security-Relevant Resources And Metadata
+Yeti - Your Everyday Threat Intelligence
+Parth - Heuristic Vulnerable Parameter Scanner
+Pyre-Check - Performant Type-Checking For Python
+Intel Owl - Analyze Files, Domains, IPs In Multiple Ways From A Single API At Scale
+Scan-For-Webcams - Scan For Webcams In The Internet
+Cloud-Sniper - Virtual Security Operations Center
+SecGen - Create Randomly Insecure VMs
+ADBSploit - A Python Based Tool For Exploiting And Managing Android Devices Via ADB
+Wonitor - Fast, Zero Config Web Endpoint Change Monitor
+DropEngine - Malleable Payloads!
+ReconSpider - Most Advanced Open Source Intelligence (OSINT) Framework For Scanning IP Address, Emails, Websites, Organizations
+Pagodo - Automate Google Hacking Database Scraping And Searching
+Kali Linux 2020.3 Release - Penetration Testing and Ethical Hacking Linux Distribution
+PurpleSharp - C# Adversary Simulation Tool That Executes Adversary Techniques With The Purpose Of Generating Attack Telemetry In Monitored Windows Environments
+Sinter - A User-Mode Application Authorization System For MacOS Written In Swift
+IoT-PT - A Virtual Environment For Pentesting IoT Devices
+Urlbuster - Powerful Mutable Web Directory Fuzzer To Bruteforce Existing And/Or Hidden Files Or Directories
+PowerSharpPack - Many usefull offensive CSharp Projects wraped into Powershell for easy usage
+Spybrowse - Code Developed To Steal Certain Browser Config Files (History, Preferences, Etc)
+CheckXSS - Detect XSS vulnerability in Web Applications
+Phirautee - A PoC Crypto Virus To Spread User Awareness About Attacks And Implications Of Ransomwares
+Unfollow-Plus - Automated Instagram Unfollower Bot
+DAGOBAH - Open Source Tool To Generate Internal Threat Intelligence, Inventory & Compliance Data From AWS Resources
+AWS Report - A Tool For Analyzing Amazon Resources
+AWS Report - A Tool For Analyzing Amazon Resources.
+Bastillion - A Web-Based SSH Console That Centrally Manages Administrative Access To Systems
+Nautilus - A Grammar Based Feedback Fuzzer
+SharpChromium - .NET 4.0 CLR Project To Retrieve Chromium Data, Such As Cookies, History And Saved Logins
+SkyArk - Helps To Discover, Assess And Secure The Most Privileged Entities In Azure And AWS
+PE Tree - Python Module For Viewing Portable Executable (PE) Files In A Tree-View
+Flask-Session-Cookie-Manager - Flask Session Cookie Decoder/Encoder
+Arcane - A Simple Script Designed To Backdoor iOS Packages (Iphone-Arm) And Create The Necessary Resources For APT Repositories
+IRFuzz - Simple Scanner with Yara Rule
+Evine - Interactive CLI Web Crawler
+SharpAppLocker - C# Port Of The Get-AppLockerPolicy PS Cmdlet
+PhishingKitTracker - Let's Track Phishing Kits To Give To Research Community Raw Material To Stud
+FestIn - S3 Bucket Weakness Discovery
+Chalumeau - Automated, Extendable And Customizable Credential Dumping Tool
+Gtunnel - A Robust Tunelling Solution Written In Golang
+Taowu - A CobaltStrike Toolkit
+UEFI_RETool - A Tool For UEFI Firmware Reverse Engineering
+Netenum - A Tool To Passively Discover Active Hosts On A Network
+DLInjector-GUI - DLL Injector Graphical User Interface
+Xeca - PowerShell Payload Generator
+Cnitch - Container Snitch Checks Running Processes Under The Docker Engine And Alerts If Any Are Found To Be Running As Root
+Mistica - An Open Source Swiss Army Knife For Arbitrary Communication Over Application Protocols
+DeimosC2 - A Golang Command And Control Framework For Post-Exploitation
+EternalBlueC - EternalBlue Suite Remade In C/C++ Which Includes: MS17-010 Exploit, EternalBlue Vulnerability Detector, DoublePulsar Detector And DoublePulsar Shellcode & DLL Uploader
+CWFF - Create Your Custom Wordlist For Fuzzing
+Cloudsplaining - An AWS IAM Security Assessment Tool That Identifies Violations Of Least Privilege And Generates A Risk-Prioritized Report
+Kubei - A Flexible Kubernetes Runtime Scanner
+dazzleUP - A Tool That Detects The Privilege Escalation Vulnerabilities Caused By Misconfigurations And Missing Updates In The Windows OS
+uDork - Tool That Uses Advanced Google Search Techniques To Obtain Sensitive Information In Files Or Directories, Find IoT Devices, Detect Versions Of Web Applications, And So On
+Oralyzer - Tool To Identify Open Redirection
+Kubebox - Terminal And Web Console For Kubernetes
+Commit Stream - OSINT Tool For Finding Github Repositories By Extracting Commit Logs In Real Time From The Github Event API
+Oralyzer - Open Redirection Analyzer
+SNOWCRASH - A Polyglot Payload Generator
+Intelspy - Perform Automated Network Reconnaissance Scans
+HawkScan - Security Tool For Reconnaissance And Information Gathering On A Website
+TrustJack - Yet Another PoC For Hijacking DLLs in Windows
+HawkScan - Security Tool For Reconnaissance And Information Gathering On A Website. (Python 2.X &Amp; 3.X)
+Sitedorks - Search Google/Bing/DuckDuckGo/Yandex/Yahoo For A Search Term With Different Websites
+reNgine - An Automated Reconnaissance Framework Meant For Gathering Information During Penetration Testing Of Web Applications
+Autoenum - Automatic Service Enumeration Script
+AuthMatrix - A Burp Suite Extension That Provides A Simple Way To Test Authorization
+Permission Manager - A Project That Brings Sanity To Kubernetes RBAC And Users Management, Web UI FTW
+Quiver - Tool To Manage All Of Your Tools For Bug Bounty Hunting And Penetration Testing
+Onex - A Library Of Hacking Tools For Termux And Other Linux Distributions
+Kali-Linux-Tools-Interface - Graphical Web Interface Developed To Facilitate The Use Of Security Information Tools
+Lazybee - Wordlist Generator Tool for Termux
+NTLMRecon - A Tool To Enumerate Information From NTLM Authentication Enabled Web Endpoints
+ADB-Toolkit - Tool for testing your Android device
+hackerEnv - An Automation Tool That Quickly And Easily Sweep IPs And Scan Ports, Vulnerabilities And Exploit Them
+PENIOT - Penetration Testing Tool for IoT
+Lazymux - A Huge List Of Many Hacking Tools And PEN-TESTING Tools
+Keylogger - Get Keyboard, Mouse, ScreenShot, Microphone Inputs From Target Computer And Send To Your Mail
+Bramble - A Hacking Open Source Suite
+Docker for Pentest - Image With The More Used Tools To Create A Pentest Environment Easily And Quickly
+T14M4T - Automated Brute-Forcing Attack Tool
+Steganographer - Hide Files Or Data In Image Files
+Tsunami - A General Purpose Network Security Scanner With An Extensible Plugin System For Detecting High Severity Vulnerabilities With High Confidence
+Saferwall - A Hackable Malware Sandbox For The 21St Century
+WiFi Passview v4.0 - An Open Source Batch Script Based WiFi Passview For Windows!
+Capsulecorp-Pentest - Vagrant VirtualBox Environment For Conducting An Internal Network Penetration Test
+Natlas - Scaling Network Scanning
+Maskprocessor - High-Performance Word Generator With A Per-Position Configureable Charset
+X64Dbg - An Open-Source X64/X32 Debugger For Windows
+DroneSploit - Drone Pentesting Framework Console
+Padding-Oracle-Attacker - CLI Tool And Library To Execute Padding Oracle Attacks Easily
+Debotnet - A Tiny Portable Tool For Controlling Windows 10's Many Privacy-Related Settings And Keep Your Personal Data Private
+Santa - A Binary Whitelisting/Blacklisting System For macOS
+FinDOM-XSS - A Fast DOM Based XSS Vulnerability Scanner With Simplicity
+ParamSpider - Mining Parameters From Dark Corners Of Web Archives
+OWASP Threat Dragon - Cross-Platform Threat Modeling Application
+GIVINGSTORM - Infection Vector That Bypasses AV, IDS, And IPS
+Converting MBOX to Outlook Easily
+WordListGen - Super Simple Python Word List Generator For Fuzzing And Brute Forcing In Python
+dorkScanner - A Typical Search Engine Dork Scanner Scrapes Search Engines With Dorks That You Provide In Order To Find Vulnerable URLs
+Harbian-Audit - Hardened Debian GNU/Linux Distro Auditing
+Shhgit - Find GitHub Secrets In Real Time
+Scant3R - Web Security Scanner
+Scant3R - ScanT3r - Web Security Scanner
+Airshare - Cross-platform Content Sharing In A Local Network
+Git All The Payloads! A Collection Of Web Attack Payloads
+Faxhell - A Bind Shell Using The Fax Service And A DLL Hijack
+Exe_To_Dll - Converts A EXE Into DLL
+HackingTool - ALL IN ONE Hacking Tool For Hackers
+FastNetMon Community - Very Fast DDoS Analyzer With Sflow/Netflow/Mirror Support
+GoGhost - High Performance, Lightweight, Portable Open Source Tool For Mass SMBGhost Scan
+How to Report IP Addresses
+Server Side Template Injection Payloads
+Behave - A Monitoring Browser Extension For Pages Acting As Bad Boys
+ShellGen - Reverse shell generator
+KITT-Lite - Python-Based Pentesting CLI Tool
+How AI and Voice Technology is Similar to a Service Dog
+IIS-Raid - A Native Backdoor Module For Microsoft IIS (Internet Information Services)
+UsoDllLoader - Windows - Weaponizing Privileged File Writes With The Update Session Orchestrator Service
+Basecrack - Best Decoder Tool For Base Encoding Schemes
+MSFPC - MSFvenom Payload Creator
+Kube-Bench - Checks Whether Kubernetes Is Deployed According To Security Best Practices As Defined In The CIS Kubernetes Benchmark
+EvilNet - Network Attack Wifi Attack Vlan Attack Arp Attack Mac Attack Attack Revealed Etc...
+Xeexe - Undetectable And XOR Encrypting With Custom KEY (FUD Metasploit RAT)
+BSF - Botnet Simulation Framework
+Espionage - A Network Packet And Traffic Interceptor For Linux. Spoof ARP & Wiretap A Network
+Screenspy - Capture user screenshots using shortcut file (Bypass SmartScreen/Defender)
+VBSmin - VBScript Minifier
+Cloudtopolis - Cracking Hashes In The Cloud For Free
+Spyse: All-In-One Cybersecurity Search Engine
+Colabcat - Running Hashcat On Google Colab With Session Backup And Restore
+CorsMe - Cross Origin Resource Sharing MisConfiguration Scanner
+How to Free Recover Deleted Files on Your Mac
+Sifter 7.4 - OSINT, Recon & Vulnerability Scanner
+Hmmcookies - Grab Cookies From Firefox, Chrome, Opera Using A Shortcut File (Bypass UAC)
+Business Secure: How AI is Sneaking into our Restaurants
+InQL - A Burp Extension For GraphQL Security Testing
+TokenBreaker - JSON RSA To HMAC And None Algorithm Vulnerability POC
+SAyHello - Capturing Audio (.Wav) From Target Using A Link
+Lynis 3.0.0 - Security Auditing Tool for Unix/Linux Systems
+O.G. AUTO-RECON - Enumerate A Target Based Off Of Nmap Results
+Zip Cracker - Python Script To Crack Zip Password With Dictionary Attack And Also Use Crunch As Pipeline
+DroidTracker - Script To Generate An Android App To Track Location In Real Time
+Iox - Tool For Port Forward &Amp; Intranet Proxy
+OSS-Fuzz - Continuous Fuzzing Of Open Source Software
+Vhosts-Sieve - Searching For Virtual Hosts Among Non-Resolvable Domains
+Formphish - Auto Phishing Form-Based Websites
+SGN - Encoder Ported Into Go With Several Improvements
+TeaBreak - A Productivity Burp Extension Which Reminds To Take Break While You Are At Work!
+Digital Signature Hijack - Binaries, PowerShell Scripts And Information About Digital Signature Hijacking
+SecretFinder - A Python Script For Find Sensitive Data (Apikeys, Accesstoken, JWT...) And Search Anything On Javascript Files
+Fsociety - A Modular Penetration Testing Framework
+EvilDLL - Malicious DLL (Reverse Shell) Generator For DLL Hijacking
+Axiom - A Dynamic Infrastructure Toolkit For Red Teamers And Bug Bounty Hunters!
+Fast-Google-Dorks-Scan - Fast Google Dorks Scan
+URLCADIZ - A Simple Script To Generate A Hidden Url For Social Engineering
+Shodanfy.py - Get Ports, Vulnerabilities, Informations, Banners, ..Etc For Any IP With Shodan (No Apikey! No Rate-Limit!)
+KatroLogger - KeyLogger For Linux Systems
+Attacker-Group-Predictor - Tool To Predict Attacker Groups From The Techniques And Software Used
+EvilPDF - Embedding Executable Files In PDF Documents
+Needle - Instant Access To You Bug Bounty Submission Dashboard On Various Platforms + Publicly Disclosed Reports + #Bugbountytip
+RMIScout - Wordlist And Bruteforce Strategies To Enumerate Java RMI Functions And Exploit RMI Parameter Unmarshalling Vulnerabilities
+Atlas - Quick SQLMap Tamper Suggester
+Stegcloak - Hide Secrets With Invisible Characters In Plain Text Securely Using Passwords
+BabyShark - Basic C2 Server
+URLCrazy - Generate And Test Domain Typos And Variations To Detect And Perform Typo Squatting, URL Hijacking, Phishing, And Corporate Espionage
+Impost3r - A Linux Password Thief
+Tangalanga - The Zoom Conference Scanner Hacking Tool
+Spyeye - Script To Generate Win32 .Exe File To Take Screenshots
+Words Scraper - Selenium Based Web Scraper To Generate Passwords List
+JSshell - A JavaScript Reverse Shell For Exploiting XSS Remotely Or Finding Blind XSS, Working With Both Unix And Windows OS
+Astsu - A Network Scanner Tool
+Git-Scanner - A Tool For Bug Hunting Or Pentesting For Targeting Websites That Have Open .git Repositories Available In Public
+Recox - Master Script For Web Reconnaissance
+Jshole - A JavaScript Components Vulnrability Scanner, Based On RetireJS
+GitMonitor - A Github Scanning System To Look For Leaked Sensitive Information Based On Rules
+Eviloffice - Inject Macro And DDE Code Into Excel And Word Documents (Reverse Shell)
+Ligolo - Reverse Tunneling Made Easy For Pentesters, By Pentesters
+Inshackle - Instagram Hacks: Track Unfollowers, Increase Your Followers, Download Stories, Etc
+GhostShell - Malware Indetectable, With AV Bypass Techniques, Anti-Disassembly, And More
+Forerunner - Fast And Extensible Network Scanning Library Featuring Multithreading, Ping Probing, And Scan Fetchers
+Enumy - Linux Post Exploitation Privilege Escalation Enumeration
+Bing-Ip2Hosts - Bingip2Hosts Is A Bing.com Web Scraper That Discovers Websites By IP Address
+Vault - A Tool For Secrets Management, Encryption As A Service, And Privileged Access Management
+ADCollector - A Lightweight Tool To Quickly Extract Valuable Information From The Active Directory Environment For Both Attacking And Defending
+ANDRAX v5R NH-Killer - Penetration Testing on Android
+DroidFiles - Get Files From Android Directories
+Purify - All-in-one Tool For Managing Vulnerability Reports From AppSec Pipelines
+MemoryMapper - Lightweight Library Which Allows The Ability To Map Both Native And Managed Assemblies Into Memory
+Project iKy v2.6.0 - Tool That Collects Information From An Email And Shows Results In A Nice Visual Interface
+RepoPeek - A Python Script To Get Details About A Repository Without Cloning It
+Pivotnacci - A Tool To Make Socks Connections Through HTTP Agents
+OhMyQR - Hijack Services That Relies On QR Code Authentication
+FinalRecon - The Last Web Recon Tool You'll Need
+Jaeles v0.9 - The Swiss Army Knife For Automated Web Application Testing
+Game-based learning platform provides full immersion into cybersecurity
+AutoRDPwn v5.1 - The Shadow Attack Framework
+EvilApp - Phishing Attack Using An Android App To Grab Session Cookies For Any Website (ByPass 2FA)
+S3BucketList - Firefox Plugin The Lists Amazon S3 Buckets Found In Requests
+Locator - Geolocator, Ip Tracker, Device Info By URL (Serveo And Ngrok)
+Guardedbox - Online Client-Side Manager For Secure Storage And Secrets Sharing
+Faraday v3.11 - Collaborative Penetration Test and Vulnerability Management Platform
+Minimalistic-offensive-security-tools - A Repository Of Tools For Pentesting Of Restricted And Isolated Environments
+Carina - Webshell, Virtual Private Server (VPS) And cPanel Database
+Nishang - Offensive PowerShell For Red Team, Penetration Testing And Offensive Security
+Web Hacker's Weapons - A Collection Of Cool Tools Used By Web Hackers
+Spray - A Password Spraying Tool For Active Directory Credentials By Jacob Wilkin(Greenwolf)
+Self-XSS - Self-XSS Attack Using Bit.Ly To Grab Cookies Tricking Users Into Running Malicious Code
+Open Sesame - A Tool Which Runs To Display Random Publicly Disclosed Hackerone Reports When Bored
+BlackDir-Framework - Web Application Vulnerability Scanner
+Sharingan - Offensive Security Recon Tool
+BADlnk - Reverse Shell In Shortcut File (.lnk)
+ParamKit - A Small Library Helping To Parse Commandline Parameters
+Hidden-Cry - Windows Crypter/Decrypter Generator With AES 256 Bits Key
+Open-Sesame - A Python Tool Which Runs To Display Random Publicly Disclosed Hackerone Reports When Bored
+Evilreg - Reverse Shell Using Windows Registry Files (.Reg)
+URLBrute - Tool To Brute Website Sub-Domains And Dirs
+Getdroid - FUD Android Payload And Listener
+DiscordRAT - Discord Remote Administration Tool Fully Written In Python
+Lockphish - A Tool For Phishing Attacks On The Lock Screen, Designed To Grab Windows Credentials, Android PIN And iPhone Passcode
+DalFox (Finder Of XSS) - Parameter Analysis And XSS Scanning Tool Based On Golang
+Saycheese - Grab Target'S Webcam Shots By Link
+Kaiten - A Undetectable Payload Generation
+Kali Linux 2020.2 Release - Penetration Testing and Ethical Hacking Linux Distribution
+Clipboardme - Grab And Inject Clipboard Content By Link
+Threadtear - Multifunctional Java Deobfuscation Tool Suite
+Wifipumpkin3 - Powerful Framework For Rogue Access Point Attack
+Catchyou - FUD Win32 Msfvenom Payload Generator
+PayloadsAllTheThings - A List Of Useful Payloads And Bypass For Web Application Security And Pentest/CTF
+Exegol - Exegol Is A Kali Light Base With A Few Useful Additional Tools And Some Basic Configuration
+GDBFrontend - An Easy, Flexible And Extensionable GUI Debugger
+Shellerator - Simple CLI Tool For The Generation Of Bind And Reverse Shells In Multiple Languages
+Powerob - An On-The-Fly Powershell Script Obfuscator Meant For Red Team Engagements
+How to Set Up a VPN on Kodi in 2 Minutes or Less
+PowerSploit - A PowerShell Post-Exploitation Framework
+HiveJack - This Tool Can Be Used During Internal Penetration Testing To Dump Windows Credentials From An Already-Compromised Host
+Nexphisher - Advanced Phishing Tool For Linux & Termux
+TorghostNG - Make All Your Internet Traffic Anonymized Through Tor Network
+Sshprank - A Fast SSH Mass-Scanner, Login Cracker And Banner Grabber Tool Using The Python-Masscan Module
+Generator-Burp-Extension - Everything You Need About Burp Extension Generation
+Parsec - Secure Cloud Framework
+Invoker - Penetration Testing Utility
+Authelia - The Single Sign-On Multi-Factor Portal For Web Apps
+OSSEM - A Tool To Assess Data Quality
+Klar - Integration Of Clair And Docker Registry
+Powershell-Reverse-Tcp - PowerShell Script For Connecting To A Remote Host.
+INTERCEPT - Policy As Code Static Analysis Auditing
+Thoron Framework - Tool To Generate Simple Payloads To Provide Linux TCP Attack
+SkyWrapper - Tool That Helps To Discover Suspicious Creation Forms And Uses Of Temporary Tokens In AWS
+Runtime Mobile Security (RMS) - A Powerful Web Interface That Helps You To Manipulate Android Java Classes And Methods At Runtime
+Elemental - An MITRE ATTACK Threat Library
+ROADtools - The Azure AD Exploration Framework
+Terrier - A Image And Container Analysis Tool To Identify And Verify The Presence Of Specific Files According To Their Hashes
+wxHexEditor - Hex Editor / Disk Editor for Huge Files or Devices on Linux, Windows and MacOSX
+DeathRansom - A Ransomware Developed In Python, With Bypass Technics, For Educational Purposes
+Nuclei - Nuclei Is A Fast Tool For Configurable Targeted Scanning Based On Templates Offering Massive Extensibility And Ease Of Use
+Print-My-Shell - Tool To Automate The Process Of Generating Various Reverse Shells
+S3Reverse - The Format Of Various S3 Buckets Is Convert In One Format
+Pwned - Simple CLI Script To Check If You Have A Password That Has Been Compromised In A Data Breach
+Project iKy v2.5.0 - Tool That Collects Information From An Email And Shows Results In A Nice Visual Interface
+Should-I-Trust - OSINT Tool To Evaluate The Trustworthiness Of A Company
+Wotop - Web On Top Of Any Protocol
+Firebase-Extractor - A Tool Written In Python For Scraping Firebase Data
+Lulzbuster - A Very Fast And Smart Web Directory And File Enumeration Tool Written In C
+Impulse - Impulse Denial-of-service ToolKit
+Nullscan - A Modular Framework Designed To Chain And Automate Security Tests
+githubFind3r - Fast Command Line Repo/User/Commit Search Tool
+Httpgrep - Scans HTTP Servers To Find Given Strings In URIs
+Adamantium-Thief - Decrypt Chromium Based Browsers Passwords, Cookies, Credit Cards, History, Bookmarks
+Lk Scraper - An Fully Configurable Linkedin Scrape (Scrape Anything Within Linkedin)
+Flux-Keylogger - Modern Javascript Keylogger With Web Panel
+Vulnx v2.0 - An Intelligent Bot Auto Shell Injector That Detect Vulnerabilities In Multiple Types Of CMS (Wordpress , Joomla , Drupal , Prestashop ...)
+Vulnx v2.0 - An Intelligent Bot Auto Shell Injector That Detect Vulnerabilities In Multiple Types Of CMS {(Wordpress , Joomla , Drupal , Prestashop ...)
+goBox - GO Sandbox To Run Untrusted Code
+RS256-2-HS256 - JWT Attack To Change The Algorithm RS256 To HS256
+PEASS - Privilege Escalation Awesome Scripts SUITE
+Pwndrop - Self-Deployable File Hosting Service For Red Teamers, Allowing To Easily Upload And Share Payloads Over HTTP And WebDAV
+DNSProbe - A Tool Built On Top Of Retryabledns That Allows You To Perform Multiple DNS Queries Of Your Choice With A List Of User Supplied Resolvers
+Crescendo - A Swift Based, Real Time Event Viewer For macOS - It Utilizes Apple's Endpoint Security Framework
+Burp Exporter - A Burp Suite Extension To Copy A Request To The Clipboard As Multiple Programming Languages Functions
+crauEmu - An uEmu Extension For Developing And Analyzing Payloads For Code-Reuse Attacks
+Htbenum - A Linux Enumeration Script For Hack The Box
+Domained - Multi Tool Subdomain Enumeration
+Lollipopz - Data Exfiltration Utility For Testing Detection Capabilities
+Sherloq - An Open-Source Digital Image Forensic Toolset
+Inhale - A Malware Analysis And Classification Tool
+Privacy Badger - A Browser Extension That Automatically Learns To Block Invisible Trackers
+Audix - A PowerShell Tool To Quickly Configure The Windows Event Audit Policies For Security Monitoring
+Serverless Prey - Serverless Functions For Establishing Reverse Shells To Lambda, Azure Functions, And Google Cloud Functions
+Lunar - A Lightweight Native DLL Mapping Library That Supports Mapping Directly From Memory
+Ps-Tools - An Advanced Process Monitoring Toolkit For Offensive Operations
+Eavesarp - Analyze ARP Requests To Identify Intercommunicating Hosts And Stale Network Address Configurations (SNACs)
+Richkit - Domain Enrichment Toolkit
+Chromepass - Hacking Chrome Saved Passwords
+Tentacle - A POC Vulnerability Verification And Exploit Framework
+Tails 4.5 - Live System to Preserve Your Privacy and Anonymity
+MSOLSpray - A Password Spraying Tool For Microsoft Online Accounts (Azure/O365)
+Git-Hound v1.1 - GitHound Pinpoints Exposed API Keys On GitHub Using Pattern Matching, Commit History Searching, And A Unique Result Scoring System
+DNSteal v2.0 - DNS Exfiltration Tool For Stealthily Sending Files Over DNS Requests
+OSSEM - Open Source Security Events Metadata
+Angrgdb - Use Angr Inside GDB - Create An Angr State From The Current Debugger State
+SSHPry v2.0 - Spy and Control os SSH Connected client's TTY
+HikPwn - A Simple Scanner For Hikvision Devices
+Sandcastle - A Python Script For AWS S3 Bucket Enumeration
+Tweetshell - Multi-thread Twitter BruteForcer In Shell Script
+Jackdaw - Tool To Collect All Information In Your Domain And Show You Nice Graphs
+Frida API Fuzzer - This Experimetal Fuzzer Is Meant To Be Used For API In-Memory Fuzzing
+DigiTrack - Attacks For $5 Or Less Using Arduino
+FProbe - Take A List Of Domains/Subdomains And Probe For Working HTTP/HTTPS Server
+MSSQLi-DUET - SQL Injection Script For MSSQL That Extracts Domain Users From An Active Directory Environment Based On RID Bruteforcing
+Awspx - A Graph-Based Tool For Visualizing Effective Access And Resource Relationships In AWS Environments
+Pulsar - Network Footprint Scanner Platform - Discover Domains And Run Your Custom Checks Periodically
+CVE-2020-0796 - CVE-2020-0796 Pre-Auth POC
+CVE-2020-0796 - Windows SMBv3 LPE Exploit #SMBGhost
+R00Kie-Kr00Kie - PoC Exploit For The CVE-2019-15126 Kr00K Vulnerability
+One-Lin3r v2.1 - Gives You One-Liners That Aids In Penetration Testing Operations, Privilege Escalation And More
+Project iKy v2.4.0 - Tool That Collects Information From An Email And Shows Results In A Nice Visual Interface
+Project iKy v2.4.0 - Tool That Collects Information From An Email And Shows Results In A Nice Visual Interface
+SauronEye - Search Tool To Find Specific Files Containing Specific Words, I.E. Files Containing Passwords
+Webkiller v2.0 - Tool Information Gathering
+InQL Scanner - A Burp Extension For GraphQL Security Testing
+Mssqlproxy - A Toolkit Aimed To Perform Lateral Movement In Restricted Environments Through A Compromised Microsoft SQL Server Via Socket Reuse
+ProjectOpal - Stealth Post-Exploitation Framework For Wordpress
+ConEmu - Customizable Windows Terminal With Tabs, Splits, Quake-Style, Hotkeys And More
+Tinfoil Chat - Onion-routed, Endpoint Secure Messaging System
+Tinfoil Chat - Onion-routed, Endpoint Secure Messaging System
+Ninja - Open Source C2 Server Created For Stealth Red Team Operations
+RapidPayload - Metasploit Payload Generator
+Katana - A Python Tool For Google Hacking
+Envizon v3.0 - Network Visualization And Vulnerability Management/Reporting
+Zphisher - Automated Phishing Tool
+XSS-LOADER - XSS Payload Generator / XSS Scanner / XSS Dork Finder
+Starkiller - A Frontend For PowerShell Empire
+FinalRecon v1.0.2 - OSINT Tool For All-In-One Web Reconnaissance
+ScoringEngine - Scoring Engine For Red/White/Blue Team Competitions
+Astra - Automated Security Testing For REST API's
+HTTPS Everywhere - A Browser Extension That Encrypts Your Communications With Many Websites That Offer HTTPS But Still Allow Unencrypted Connections
+uDork - Google Hacking Tool
+XXExploiter - Tool To Help Exploit XXE Vulnerabilities
+Maryam v1.4.0 - Open-source Intelligence(OSINT) Framework
+InstaSave - Python Script To Download Images, Videos & Profile Pictures From Instagram
+xShock - Shellshock Exploit
+Chepy - A Python Lib/Cli Equivalent Of The Awesome CyberChef Tool.
+Sshuttle - Transparent Proxy Server That Works As A Poor Man'S VPN. Forwards Over SSH
+Lazydocker - The Lazier Way To Manage Everything Docker
+Pypykatz - Mimikatz Implementation In Pure Python
+Token-Reverser - Word List Generator To Crack Security Tokens
+shuffleDNS - Wrapper Around Massdns Written In Go That Allows You To Enumerate Valid Subdomains
+AWSGen.py - Generates Permutations, Alterations And Mutations Of AWS S3 Buckets Names
+Jeopardize - A Low(Zero) Cost Threat Intelligence & Response Tool Against Phishing Domains
+TEA - Ssh-Client Worm
+Zelos - A Comprehensive Binary Emulation Platform
+Pickl3 - Windows Active User Credential Phishing Tool
+Betwixt - Web Debugging Proxy Based On Chrome DevTools Network Panel
+Dirble - Fast Directory Scanning And Scraping Tool
+Pentest Tools Framework - A Database Of Exploits, Scanners And Tools For Penetration Testing
+RedRabbit - Red Team PowerShell Script
+Sifter - A OSINT, Recon And Vulnerability Scanner
+FuzzBench - Fuzzer Benchmarking As A Service
+SSRF Sheriff - A Simple SSRF-testing Sheriff Written In Go
+Evil SSDP - Spoof SSDP Replies And Create Fake UPnP Devices To Phish For Credentials And NetNTLM Challenge/Response
+Proton Framework - A Windows Post Exploitation Framework Similar To Other Penetration Testing Tools Such As Meterpreter And Powershell Invader Framework
+NTLMRecon - A Tool To Enumerate Information From NTLM Authentication Enabled Web Endpoints
+HoneyBot - Capture, Upload And Analyze Network Traffic
+HTTP Asynchronous Reverse Shell - Asynchronous Reverse Shell Using The HTTP Protocol
+Entropy Toolkit - A Set Of Tools To Exploit Netwave And GoAhead IP Webcams
+SharpRDP - Remote Desktop Protocol .NET Console Application For Authenticated Command Execution
+Ghost Framework - An Android Post Exploitation Framework That Uses An Android Debug Bridge To Remotely Access A n Android Device
+Extended-XSS-Search - Scans For Different Types Of XSS On A List Of URLs
+Phonia Toolkit - One Of The Most Advanced Toolkits To Scan Phone Numbers Using Only Free Resources
+PrivescCheck - Privilege Escalation Enumeration Script For Windows
+TwitWork - Monitor Twitter Stream
+XCTR Hacking Tools - All in one tools for Information Gathering
+WiFi Passview v2.0 - An Open Source Batch Script Based WiFi Passview For Windows!
+dnsFookup - DNS Rebinding Toolkit
+BadBlood - Fills A Microsoft Active Directory Domain With A Structure And Thousands Of Objects
+Xencrypt - A PowerShell Script Anti-Virus Evasion Tool
+Subfinder - A Subdomain Discovery Tool That Discovers Valid Subdomains For Websites
+Extended-SSRF-Search - Smart SSRF Scanner Using Different Methods Like Parameter Brute Forcing In Post And Get...
+IoTGoat - A Deliberately Insecure Firmware Based On OpenWrt
+Polyshell - A Bash/Batch/PowerShell Polyglot!
+Mouse Framework - An iOS And macOS Post Exploitation Surveillance Framework That Gives You A Command Line Session With Extra Functionality Between You And A Target Machine Using Only A Simple Mouse Payload
+Multi-Juicer - Run Capture The Flags And Security Trainings With OWASP Juice Shop
+Progress-Burp - Burp Suite Extension To Track Vulnerability Assessment Progress
+Faraday presents the latest version of their Security Platform for Vulnerability Management Automation
+ABD - Course Materials For Advanced Binary Deobfuscation
+Wifi-Hacker - Shell Script For Attacking Wireless Connections Using Built-In Kali Tools
+get_Team_Pass - Get Teamviewer's ID And Password From A Remote Computer In The LAN
+Faraday presents the latest version of their Security Platform for Vulnerability Management Automation
+Dnssearch - A Subdomain Enumeration Tool
+Liffy - Local File Inclusion Exploitation Tool
+DLLPasswordFilterImplant - DLL Password Filter Implant With Exfiltration Capabilities
+Ohmybackup - Scan Victim Backup Directories & Backup Files
+Gadgetinspector - A Byte Code Analyzer For Finding Deserialization Gadget Chains In Java Applications
+OWASP D4N155 - Intelligent And Dynamic Wordlist Using OSINT
+TaskManager-Button-Disabler - Simple Way To Disable/Rename Buttons From A Task Manager
+SUDO_KILLER - A Tool To Identify And Exploit Sudo Rules' Misconfigurations And Vulnerabilities Within Sudo
+Adama - Searches For Threat Hunting And Security Analytics
+Metabigor - Intelligence Tool But Without API Key
+Rabid - A CLI Tool And Library Allowing To Simply Decode All Kind Of BigIP Cookies
+0L4Bs - Cross-site Scripting Labs For Web Application Security Enthusiasts
+CVE Api - Parse & filter the latest CVEs from cve.mitre.org
+NekoBot - Auto Exploiter With 500+ Exploit 2000+ Shell
+Gospider - Fast Web Spider Written In Go
+DecryptTeamViewer - Enumerate And Decrypt TeamViewer Credentials From Windows Registry
+DrSemu - Malware Detection And Classification Tool Based On Dynamic Behavior
+Syborg - Recursive DNS Subdomain Enumerator With Dead-End Avoidance System
+Manul - A Coverage-Guided Parallel Fuzzer For Open-Source And Blackbox Binaries On Windows, Linux And MacOS
+Fuzzowski - The Network Protocol Fuzzer That We Will Want To Use
+Nray - Distributed Port Scanner
+BurpSuite Random User-Agents - Burp Suite Extension For Generate A Random User-Agents
+CTFTOOL - Interactive CTF Exploration Tool
+Aduket - Straight-forward HTTP Client Testing, Assertions Included
+OpenRelayMagic - Tool To Find SMTP Servers Vulnerable To Open Relay
+Hashcracker - Python Hash Cracker
+KawaiiDeauther - Jam All Wifi Clients/Routers
+Agente - Distributed Simple And Robust Release Management And Monitoring System
+XSS-Freak - An XSS Scanner Fully Written In Python3 From Scratch
+IPv6Tools - A Robust Modular Framework That Enables The Ability To Visually Audit An IPv6 Enabled Network
+Pytm - A Pythonic Framework For Threat Modeling
+Netdata - Real-time Performance Monitoring
+InjuredAndroid - A Vulnerable Android Application That Shows Simple Examples Of Vulnerabilities In A CTF Style
+FockCache - Minimalized Test Cache Poisoning
+Acunetix v13 - Web Application Security Scanner
+SEcraper - Search Engine Scraper Tool With BASH Script.
+Re2Pcap - Create PCAP file from raw HTTP request or response in seconds
+Takeover v0.2 - Sub-Domain TakeOver Vulnerability Scanner
+Misp-Dashboard - A Dashboard For A Real-Time Overview Of Threat Intelligence From MISP Instances
+Jaeles v0.4 - The Swiss Army Knife For Automated Web Application Testing
+Dufflebag - Search Exposed EBS Volumes For Secrets
+Qiling - Advanced Binary Emulation Framework
+Nfstream - A Flexible Network Data Analysis Framework
+WhatTheHack - A Collection Of Challenge Based Hack-A-Thons Including Student Guide, Proctor Guide, Lecture Presentations, Sample/Instructional Code And Templates
+Injectus - CRLF And Open Redirect Fuzzer
+PCFG Cracker - Probabilistic Context Free Grammar (PCFG) Password Guess Generator
+DVNA - Damn Vulnerable NodeJS Application
+GDA Android Reversing Tool - A New Decompiler Written Entirely In C++, So It Does Not Rely On The Java Platform, Which Is Succinct, Portable And Fast, And Supports APK, DEX, ODEX, Oat
+Project-Black - Pentest/BugBounty Progress Control With Scanning Modules
+RiskAssessmentFramework - Static Application Security Testing
+MassDNS - A High-Performance DNS Stub Resolver For Bulk Lookups And Reconnaissance (Subdomain Enumeration)
+S3Enum - Fast Amazon S3 Bucket Enumeration Tool For Pentesters
+See-SURF - Python Based Scanner To Find Potential SSRF Parameters
+Blinder - A Python Library To Automate Time-Based Blind SQL Injection
+Obfuscapk - A Black-Box Obfuscation Tool For Android Apps
+Kali Linux 2020.1 Release - Penetration Testing and Ethical Hacking Linux Distribution
+PythonAESObfuscate - Obfuscates A Python Script And The Accompanying Shellcode
+ApplicationInspector - A Source Code Analyzer Built For Surfacing Features Of Interest And Other Characteristics To Answer The Question 'What'S In It' Using Static Analysis With A Json Based Rules Engine
+CredNinja - A Multithreaded Tool Designed To Identify If Credentials Are Valid, Invalid, Or Local Admin Valid Credentials Within A Network At-Scale Via SMB, Plus Now With A User Hunter
+Mimir - Smart OSINT Collection Of Common IOC Types
+Socialscan - Check Email Address And Username Availability On Online Platforms With 100% Accuracy
+Aircrack-ng 1.6 - Complete Suite Of Tools To Assess WiFi Network Security
+Memhunter - Live Hunting Of Code Injection Techniques
+AgentSmith-HIDS - Open Source Host-based Intrusion Detection System (HIDS)
+Hershell - Multiplatform Reverse Shell Generator
+Check-LocalAdminHash - A PowerShell Tool That Attempts To Authenticate To Multiple Hosts Over Either WMI Or SMB Using A Password Hash To Determine If The Provided Credential Is A Local Administrator
+SharpStat - C# Utility That Uses WMI To Run "cmd.exe /c netstat -n", Save The Output To A File, Then Use SMB To Read And Delete The File Remotely
+KsDumper - Dumping Processes Using The Power Of Kernel Space
+YARASAFE - Automatic Binary Function Similarity Checks with Yara
+AlertResponder - Automatic Security Alert Response Framework By AWS Serverless Application Model
+TAS - A Tiny Framework For Easily Manipulate The Tty And Create Fake Binaries
+Corsy v1.0 - CORS Misconfiguration Scanner
+TeleGram-Scraper - Telegram Group Scraper Tool (Fetch All Information About Group Members)
+Grouper2 - Find Vulnerabilities In AD Group Policy
+Gophish - Open-Source Phishing Toolkit
+Aaia - AWS Identity And Access Management Visualizer And Anomaly Finder
+Scallion - GPU-based Onion Addresses Hash Generator
+Bluewall - A Firewall Framework Designed For Offensive And Defensive Cyber Professionals
+AntiCheat-Testing-Framework - Framework To Test Any Anti-Cheat
+Gowitness - A Golang, Web Screenshot Utility Using Chrome Headless
+Lsassy - Extract Credentials From Lsass Remotely
+LOLBITS - C# Reverse Shell Using Background Intelligent Transfer Service (BITS) As Communication Protocol
+Shell Backdoor List - PHP / ASP Shell Backdoor List
+Hakrawler - Simple, Fast Web Crawler Designed For Easy, Quick Discovery Of Endpoints And Assets Within A Web Application
+Gtfo - Search For Unix Binaries That Can Be Exploited To Bypass System Security Restrictions
+SWFPFinder - SWF Potential Parameters Finder
+laravelN00b - Automated Scan .env Files And Checking Debug Mode In Victim Host
+Andriller - Software Utility With A Collection Of Forensic Tools For Smartphones
+LAVA - Large-scale Automated Vulnerability Addition
+Heapinspect - Inspect Heap In Python
+CHAPS - Configuration Hardening Assessment PowerShell Script
+Karonte - A Static Analysis Tool To Detect Multi-Binary Vulnerabilities In Embedded Firmware
+IotShark - Monitoring And Analyzing IoT Traffic
+LNAV - Log File Navigator
+TuxResponse - Linux Incident Response
+Stowaway - Multi-hop Proxy Tool For Pentesters
+Git-Vuln-Finder - Finding Potential Software Vulnerabilities From Git Commit Messages
+WAFW00F v2.0 - Allows One To Identify And Fingerprint Web Application Firewall (WAF) Products Protecting A Website
+XposedOrNot - Tool To Search An Aggregated Repository Of Xposed Passwords Comprising Of ~850 Million Real Time Passwords
+Dsync - IDAPython Plugin That Synchronizes Disassembler And Decompiler Views
+RFCpwn - An Enumeration And Exploitation Toolkit Using RFC Calls To SAP
+LKWA - Lesser Known Web Attack Lab
+Multiscanner - Modular File Scanning/Analysis Framework
+Findomain v0.9.3 - The Fastest And Cross-Platform Subdomain Enumerator
+OKadminFinder - Admin Panel Finder / Admin Login Page Finder
+BetterBackdoor - A Backdoor With A Multitude Of Features
+Spraykatz - A Tool Able To Retrieve Credentials On Windows Machines And Large Active Directory Environments
+Shelly - Simple Backdoor Manager With Python (Based On Weevely)
+huskyCI - Performing Security Tests Inside Your CI
+AttackSurfaceMapper - A Tool That Aims To Automate The Reconnaissance Process
+Pylane - An Python VM Injector With Debug Tools, Based On GDB
+PAKURI - Penetration Test Achieve Knowledge Unite Rapid Interface
+Malwinx - Just A Normal Flask Web App To Understand Win32Api With Code Snippets And References
+Quark-Engine - An Obfuscation-Neglect Android Malware Scoring System
+nmapAutomator - Tool To Automate All Of The Process Of Recon/Enumeration
+RansomCoin - A DFIR Tool To Extract Cryptocoin Addresses And Other Indicators Of Compromise From Binaries
+Pown.js - A Security Testing An Exploitation Toolkit Built On Top Of Node.js And NPM
+Top 20 Most Popular Hacking Tools in 2019
+Turbolist3r - Subdomain Enumeration Tool With Analysis Features For Discovered Domains
+SQLMap v1.4 - Automatic SQL Injection And Database Takeover Tool
+AVCLASS++ - Yet Another Massive Malware Labeling Tool
+XSpear v1.3 - Powerfull XSS Scanning And Parameter Analysis Tool
+Kamerka GUI - Ultimate Internet Of Things/Industrial Control Systems Reconnaissance Tool
+SysWhispers - AV/EDR Evasion Via Direct System Calls
+S3Tk - A Security Toolkit For Amazon S3
+WindowsFirewallRuleset - Windows Firewall Ruleset Powershell Scripts
+AWS Report - Tool For Analyzing Amazon Resources
+Tishna - Complete Automated Pentest Framework For Servers, Application Layer To Web Security
+RedPeanut - A Small RAT Developed In .Net Core 2 And Its Agent In .Net 3.5/4.0
+DetectionLab - Vagrant And Packer Scripts To Build A Lab Environment Complete With Security Tooling And Logging Best Practices
+Andor - Blind SQL Injection Tool With Golang
+SQL Injection Payload List
+WinPwn - Automation For Internal Windows Penetrationtest / AD-Security
+Ddoor - Cross Platform Backdoor Using Dns Txt Records
+Custom Header - Automatic Add New Header To Entire BurpSuite HTTP Requests
+SCShell - Fileless Lateral Movement Tool That Relies On ChangeServiceConfigA To Run Command
+Ultimate Facebook Scraper - A Bot Which Scrapes Almost Everything About A Facebook User'S Profile Including All Public Posts/Statuses Available On The User'S Timeline, Uploaded Photos, Tagged Photos, Videos, Friends List And Their Profile Photos
+FireProx - AWS API Gateway Management Tool For Creating On The Fly HTTP Pass-Through Proxies For Unique IP Rotation
+DNCI - Dot Net Code Injector
+RdpThief - Extracting Clear Text Passwords From Mstsc.Exe Using API Hooking
+Leprechaun - Tool Used To Map Out The Network Data Flow To Help Penetration Testers Identify Potentially Valuable Targets
+Glances - An Eye On Your System. A Top/Htop Alternative For GNU/Linux, BSD, Mac OS And Windows Operating Systems
+Sshtunnel - SSH Tunnels To Remote Server
+RE:TERNAL - Repo Containing Docker-Compose Files And Setup Scripts Without Having To Clone The Individual Reternal Components
+Antispy - A Free But Powerful Anti Virus And Rootkits Toolkit
+Flan - A Pretty Sweet Vulnerability Scanner By CloudFlare
+Corsy - CORS Misconfiguration Scanner
+Kali Linux 2019.4 Release - Penetration Testing and Ethical Hacking Linux Distribution
+XML External Entity (XXE) Injection Payload List
+ATFuzzer - Dynamic Analysis Of AT Interface For Android Smartphones
+Netstat2Neo4J - Create Cypher Create Statements For Neo4J Out Of Netstat Files From Multiple Machines
+BaseQuery - A Way To Organize Public Combo-Lists And Leaks In A Way That You Can Easily Search Through Everything
+Attack Monitor - Endpoint Detection And Malware Analysis Software
+Crashcast-Exploit - This Tool Allows You Mass Play Any YouTube Video With Chromecasts Obtained From Shodan.io
+Tool-X - A Kali Linux Hacking Tool Installer
+SQLMap v1.3 - Automatic SQL Injection And Database Takeover Tool
+Stretcher - Tool Designed To Help Identify Open Elasticsearch Servers That Are Exposing Sensitive Information
+Aztarna - A Footprinting Tool For Robots
+Hediye - Hash Generator & Cracker Online Offline
+Killcast - Manipulate Chromecast Devices In Your Network
+bypass-firewalls-by-DNS-history - Firewall Bypass Script Based On DNS History Records
+WiFi-Pumpkin v0.8.7 - Framework for Rogue Wi-Fi Access Point Attack
+H8Mail - Email OSINT And Password Breach Hunting
+Kube-Hunter - Hunt For Security Weaknesses In Kubernetes Clusters
+Metasploit 5.0 - The World’s Most Used Penetration Testing Framework
+Interlace - Easily Turn Single Threaded Command Line Applications Into Fast, Multi Threaded Ones With CIDR And Glob Support
+Twifo-Cli - Get User Information Of A Twitter User
+Sitadel - Web Application Security Scanner
+Pe-Sieve - Recognizes And Dumps A Variety Of Potentially Malicious Implants (Replaced/Injected PEs, Shellcodes, Hooks, In-Memory Patches)
+Malboxes - Builds Malware Analysis Windows VMs So That You Don'T Have To
+Snyk - CLI And Build-Time Tool To Find & Fix Known Vulnerabilities In Open-Source Dependencies
+Shed - .NET Runtime Inspector
+Stardox - Github Stargazers Information Gathering Tool
+Commix v2.7 - Automated All-in-One OS Command Injection And Exploitation Tool
+AutoSploit v3.0 - Automated Mass Exploiter
+Faraday v3.5 - Collaborative Penetration Test and Vulnerability Management Platform
+Recaf - A Modern Java Bytecode Editor
+dnSpy - .NET Debugger And Assembly Editor

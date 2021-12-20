@@ -1,0 +1,85 @@
+Using “dumpsys battery” we can get information about the device battery status.
+
+$ adb shell dumpsys battery
+Current Battery Service state:
+AC powered: false
+USB powered: true
+Wireless powered: false
+status: 2
+health: 2
+present: true
+level: 100
+scale: 100
+voltage: 4240
+temperature: 273
+technology: Li-ion
+First three lines show what charges are connected. To interpret the status and health values you can use corresponding constants in BatteryManager documentation. Here’s an extract from that doc. Values we got are highlighted.
+
+[table id=1 /]
+
+“scale” is the maximum value of “level”. Divide “temperature” by 10 to get value in Celsius.
+
+We can make the system think that charger is disconnected with a command
+
+$ adb shell dumpsys battery set usb 0
+In Android 6 a new “unplug” command is available. It’s an equivalent to setting all the chargers (usb, ac, wireless) to 0.
+
+$ adb shell dumpsys battery unplug
+If you want to change battery level value, use “set level” command:
+
+$ adb shell dumpsys battery set level 5
+Also let’s set battery status to “discharging”:
+
+$ adb shell dumpsys battery set status 3
+At this moment our battery is in discharging state with level 5.
+
+The first time you invoke one of “set” commands, device stops getting information from real hardware. Hence, do not forget to finish your gambling with “reset” command in order to get our device back to earth.
+
+$ adb shell dumpsys battery reset$ adb shell am start -n your.pckg.name/.MainActivity \
+
+   -e name1 string-value -ei name2 21
+This would start an activity and the following code would pass in onCreate():
+
+Intent intent = getIntent();
+
+assert "string-value".equals(intent.getStringExtra("name1"));
+
+assert intent.getIntExtra("name2", -1) == 21;
+And here’s how we can open Twitter application to view a post:
+
+$ adb shell am start -a android.intent.action.VIEW \
+
+   -c android.intent.category.BROWSABLE \
+
+   -d https://twitter.com/roman_mazur/status/672758680669036545
+In fact this will simulate an Intent sent by a browser when some link is clicked on a page.
+
+Starting a Service is not harder: simply replace start with startservice. Options you can use to specify an Intent remain the same.
+
+$ adb shell startservice -n your.pckg.name/.YourPlaybackService \
+
+   -a your.pckg.name.action.START
+In your onStartService  on onHandleIntent  (if you use an IntentService) the following would pass:
+
+assert "your.pckg.name.action.START".equals(intent.getAction())
+But remember that only exported components can be started from shell. Otherwise you can activate them only from your internal process. Components can be exported implicitly if they get an intent filter definition in your manifest. Or explicitly, if you specify android:exported=”true” on your component element.
+
+You usually do not want your components to be exported for security sake. To avoid changing your manifest on every run from shell you can add explicit exported attributes to the debug manifest of your app leveraging Android build system.
+
+To finish this post let’s configure Android system status bar to display icons you want using a simple demo mode intent protocol it supports since KitKat.
+
+To enable this demo mode we’ll need to change a special system setting first:
+
+$ adb shell settings put global sysui_demo_allowed 1
+Now we can use the activity manager client to send command to system UI. The following command will remove all the notification icons from the status bar:
+
+$ adb shell am broadcast -a com.android.systemui.demo -e action enter
+
+$ adb shell am broadcast -a com.android.systemui.demo \
+
+   -e action notifications -e visible false
+This way you will get rid of the debug icon on your screenshots. You will find a complete documentation and more examples in AOSP sources.
+
+Do not forget to exit the demo mode:
+
+$ adb shell am broadcast -a com.android.systemui.demo -e action exit
